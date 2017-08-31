@@ -1,57 +1,205 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Innoline</title>
-</head>
-<body>
-  <header class="page-header">
-    <h1 class="page-header__title">Innoline - разработка сложных сайтов  на ASP.NET</h1>
-    
-    <section class="menu">
-      <h2 class="menu__title">Навигация по сайту</h2>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innoline</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-header__title">Innoline - разработка сложных сайтов  на ASP.NET</h1>
 
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Портфолио</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Услуги</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">О нас</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <section class="menu">
+        <h2 class="menu__title">Навигация по сайту</h2>
 
-      <div class="logo">
-        <img src="img/Innoline(1).png" width="32" height="32" alt="innolaine">
-      </div>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Портфолио</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Услуги</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-      <section class="lang">
-        <h2 class="menu__title">Выбор языка сайта</h2>
-        <a class="lang__link">EN</a>
-        <a class="lang__link">RU</a>
+        <div class="logo">
+          <img src="img/Innoline(1).png" width="32" height="32" alt="innolaine">
+        </div>
+
+        <section class="lang">
+          <h2 class="menu__title">Выбор языка сайта</h2>
+          <a class="lang__link">EN</a>
+          <a class="lang__link">RU</a>
+        </section>
       </section>
+    </header>
 
+    <main>
       <section class="slogan">
         <h2 class="menu__title">Слоган</h2>
         <span class="slogan__title">Разработка сложных сайтов  на ASP.NET</span>
-        <a href="#" class="slogan__btn">в портфолио</a>
+        <a href="#" class="slogan__btn  btn">в портфолио</a>
       </section>
 
-    </section>
-  </header>
-  
+      <section class="about">
+        <h2 class="about__title">О компании</h2>
+        <p class="about__text">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
+        <ul class="about__list">
+          <li class="about__item">Консультирование</li>
+          <li class="about__item">Менеджмент проектов</li>
+          <li class="about__item">Гарантия качества</li>
+          <li class="about__item">Выполнение сроков</li>
+        </ul>
+      </section>
 
-</body>
+      <section class="portfolio">
+        <h2 class="portfolio__title">Наши работы</h2>
+        <p class="portfolio__text">В зависимости от особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
+        <ul class="portfolio__filter"> <!-- показываем только на десктопе -->
+          <li class="portfolio__item  portfolio__item--active">Все</li>
+          <li class="portfolio__item">сайты</li>
+          <li class="portfolio__item">системы</li>
+          <li class="portfolio__item">приложения</li>
+        </ul>
+        <!-- СЛАЙДЕР -->
+        <section class="portfolio__slider">
+          <input type="radio" name="slide" id="slide-1">
+          <input type="radio" name="slide" id="slide-2" checked>
+          <input type="radio" name="slide" id="slide-3">
+          <input type="radio" name="slide" id="slide-4">
+          <div class="slider__inner">
+            <div class="slider__slide">
+              <div class="slaider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/portfolio1-desc.jpg" width="320" height="359" alt="imax technology">
+                </a>
+              </div>
+              <div class="slaider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/portfolio2-desc.jpg" width="320" height="359" alt="СтокМастер24">
+                </a>
+              </div>
+              <div class="slaider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/premier-desc.jpg" width="320" height="359" alt="Premier">
+                </a>
+              </div>
+              <div class="slaider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/portfolio4-desc.jpg" width="320" height="359" alt="iclebo">
+                </a>
+              </div>
+              <div class="slaider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/portfolio5-desc.jpg" width="320" height="359" alt="wanexpo">
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__active"> <!-- скрываем в моб.версии -->
+            <label for="slide-1">01.</label>
+            <label for="slide-2">02.</label>
+            <label for="slide-3">03.</label>
+            <label for="slide-4">04.</label>
+          </div>
+          <div class="slider__controls"> <!-- скрываем в моб.версии -->
+            <label for="slide-1">
+              <span class="slider-controls__prev">пред</span>
+              <span class="slider-controls__next">след</span>
+            </label>
+            <label for="slide-2">
+              <span class="slider-controls__prev">пред</span>
+              <span class="slider-controls__next">след</span>
+            </label>
+            <label for="slide-3">
+              <span class="slider-controls__prev">пред</span>
+              <span class="slider-controls__next">след</span>
+            </label>
+            <label for="slide-4">
+              <span class="slider-controls__prev">пред</span>
+              <span class="slider-controls__next">след</span>
+            </label>
+          </div>
+        </section>
+        <!-- /СЛАЙДЕР -->
+      </section>
+
+      <section class="news">
+        <h2 class="news__title">Последние новости</h2>
+        <P class="news__subtitle">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
+        <article class="news__item">
+          <img src="img/news-mobile.jpg" width="300" height="177" alt="космическая станция">
+          <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
+          <time datetime="2015-03-25">25.03.2015</time>
+          <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
+        </article>
+        <article class="news__item">
+          <img src="img/news-mobile.jpg" width="300" height="177" alt="космическая станция">
+          <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
+          <time datetime="2015-03-25">25.03.2015</time>
+          <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
+        </article>
+        <article class="news__item">
+          <img src="img/news2-desc.jpg" width="560" height="329" alt="Байкал">
+          <h3 class="news__item-caption">Заповедные территории России</h3>
+          <time datetime="2015-03-25">25.03.2015</time>
+          <p class="news__item-text">Байкал - самое глубокое озеро на планете, крупнейший природный резервуар пресной воды. В Байкале обитает 2600 видов и подвидов водных животных, более половины которых являются эндемиками, то есть обитают только в этом водоеме.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <section class="contacts">
+        <h2 class="contacts__title">Наши контакты</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a href="tel:+79600798800" class="contacts__link">+7 (960) 079 88 00</a>
+          </li>
+          <li class="contacts__item">
+            <a href="skype:arslanov_dr?call" class="contacts__link">arslanov_dr</a>
+          </li>
+          <li class="contacts__item">
+              <a href="mailto:mail@innoline.pro" class="contacts__link">mail@innoline.pro</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="feedback">
+        <h2 class="feedback__title">Свяжитесь с нами, заполнив форму</h2>
+        <form action="#" method="get" class="feedback__form">
+          <fieldset>
+            <legend>Ваше имя</legend>
+            <input type="text" name="name" id="field-name" placeholder="Николай Андреевич">
+          </fieldset>
+          <div class="feedback__form-tel">
+            <label for="tel">Ваш номер телефона</label>
+            <input type="tel" name="tel" id="field-tel" placeholder="Ваш номер телефона">
+          </div>
+          <fieldset>
+            <legend>Ваш e-mail</legend>
+            <input type="email" name="email" id="field-email">
+          </fieldset>
+          <fieldset>
+            <legend>Ваш вопрос</legend>
+            <textarea name="question" id="fiekd-question" placeholder="Привет, как дела?"></textarea>
+          </fieldset>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </section>
+
+      <p class="copyright">2016 © INNOLINE. All rights reserved.</p>
+    </footer>
+
+  </body>
 </html>
