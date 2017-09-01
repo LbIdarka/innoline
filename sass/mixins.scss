@@ -1,0 +1,38 @@
+@mixin font-style($font-size, $line-height, $font-weight, $color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin container {
+  width: 300px;
+  margin: 0 auto;
+
+  @media ($tablet-widths) {
+    width: 728px;
+  }
+
+  @media ($desktop-widths) {
+    width: 1180px;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin input-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

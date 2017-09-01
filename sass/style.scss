@@ -1,2 +1,9 @@
 @import "global/normalize.scss";
 @import "global/global-fonts.scss";
+
+@import "mixins.scss";
+@import "variables.scss";
+
+@import "global/scaffolding.scss";
+
+@import "blocks/page-index.scss";
