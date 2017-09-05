@@ -1,13 +1,18 @@
 .page-index {
   background-image: url("../img/bg-mob.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
-
 
 @media ($tablet-widths) {
   .page-index {
     background-image: url("../img/bg-tablet.jpg");
   }
 
+}
+
+@media ($desktop-widths) {
+  .page-index {
+    background-image: url("../img/bg-desc.jpg");
+  }
 }

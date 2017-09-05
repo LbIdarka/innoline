@@ -1,0 +1,32 @@
+.main-nav {
+  width: 40px;
+  outline: 1px solid green; /*for layout*/
+}
+
+.main-nav__toggle span {
+  @include visually-hidden;
+}
+
+.main-nav__list {
+  display: none;
+  width: 260px;
+}
+
+@media ($mobile-widths-fluid) {
+  .main-nav {
+    width: 12.5%; /* 40px / 320px */
+  }
+}
+
+
+@media ($tablet-widths-fluid) {
+  .main-nav {
+    width: 50%; /*640px / 1280px */
+  }
+}
+
+@media ($desktop-widths) {
+  .main-nav {
+    width: 640px;
+  }
+}

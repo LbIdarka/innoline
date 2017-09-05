@@ -1,0 +1,4 @@
+.page-header__title {
+  @include visually-hidden;
+  min-height: 50px; /*for layout*/
+}

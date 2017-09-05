@@ -1,0 +1,62 @@
+.slogan {
+  outline: 1px solid red; /*for layout*/
+  width: 100%;
+  @include container;
+  padding-top: 130px;
+}
+
+.slogan__title {
+  @include visually-hidden;
+}
+
+.slogan__caption {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  @include font-style(14px, 25px, 700, inherit);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media ($mobile-widths-fluid) {
+  .slogan {
+    @include container-fluid;
+    padding-top: 50%;
+  }
+}
+
+
+@media ($tablet-widths) {
+  .slogan {
+    @include container;
+    padding: 0 2.6%; /* 20px / 768px */
+    padding-top: 290px;
+  }
+
+  .slogan__caption {
+    margin-bottom: 14px;
+    font-size: 17px;
+  }
+
+}
+
+@media ($tablet-widths-fluid) {
+  .slogan {
+    @include container-fluid;
+    padding-top: 50%;
+  }
+}
+
+
+@media ($desktop-widths) {
+  .slogan {
+    @include container;
+    padding: 0 3.9%; /* 50px / 1280px */
+    padding-top: 200px;
+  }
+
+  .slogan__caption {
+    margin-bottom: 40px;
+    line-height: 32px;
+  }
+}

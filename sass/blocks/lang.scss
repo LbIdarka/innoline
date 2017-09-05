@@ -1,0 +1,36 @@
+.lang {
+  width: 40px;
+  outline: 1px solid green; /*for layout*/
+}
+
+.lang__title {
+  @include visually-hidden;
+}
+
+.lang-link {
+  display: block;
+}
+
+.lang__link--active {
+  display: none;
+}
+
+@media ($mobile-widths-fluid) {
+  .lang {
+    width: 12.5%; /* 40px / 320px */
+  }
+}
+
+@media ($tablet-widths-fluid) {
+  .lang {
+    width: 5%; /* 60px / 1180px */
+  }
+}
+
+@media ($desktop-widths) {
+  .lang {
+    width: 60px;
+  }
+}
+
+

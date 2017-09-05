@@ -1,0 +1,27 @@
+.logo {
+  width: 110px;
+  outline: 1px solid green; /*for layout*/
+}
+
+.logo img {
+  display: block;
+}
+
+@media ($mobile-widths-fluid) {
+  .logo {
+    width: 34.375%; /* 110px / 320px */
+  }
+}
+
+@media ($tablet-widths-fluid) {
+  .logo {
+    width: 27.11%; /* 320px / 1180px */
+    order: -1;
+  }
+}
+
+@media ($desktop-widths) {
+  .logo {
+    width: 320px;
+  }
+}

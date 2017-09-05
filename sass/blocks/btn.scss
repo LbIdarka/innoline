@@ -1,0 +1,19 @@
+.btn {
+  display: block;
+  width: 142px;
+  margin: 0 auto;
+  padding: 8px;
+  @include font-style(14px, 32px, 700, inherit);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid $color-text;
+  border-radius: 3px;
+}
+
+@media ($tablet-widths) {
+  .btn {
+    width: 184px;
+    padding: 12px;
+  }
+}

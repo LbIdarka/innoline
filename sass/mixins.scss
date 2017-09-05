@@ -18,6 +18,23 @@
   }
 }
 
+@mixin container-fluid {
+  width: auto;
+
+  @media ($mobile-widths-fluid) {
+    width: 93.75%; /* по макету 300px / 320px */
+    max-width: 727px;
+    margin: 0 auto;
+  }
+
+  @media ($tablet-widths-fluid) {
+    width: 95.05%; /* по макету 730px / 768px */
+    max-width: 1179px;
+    margin: 0 auto;
+  }
+
+}
+
 @mixin visually-hidden {
   position: absolute;
   width: 1px;

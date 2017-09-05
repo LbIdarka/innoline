@@ -1,0 +1,29 @@
+.title {
+  position: relative;
+  display: block;
+  margin: 0;
+  @include font-style(25px, 32px, 700, inherit);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: calc(50% - 50px); /* центруем полоску */
+  width: 100px;
+  height: 4px;
+  background: $color-mark;
+  border-radius: 10px;
+}
+
+@media ($mobile-widths-fluid) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media ($tablet-widths) {
+  font-size: 35px;
+}

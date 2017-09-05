@@ -11,10 +11,11 @@
       <h1 class="page-header__title">Innoline - разработка сложных сайтов  на ASP.NET</h1>
 
       <section class="menu">
+        <div class="menu__wrapper">
         <h2 class="menu__title">Навигация по сайту</h2>
 
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Главная</a>
@@ -39,105 +40,146 @@
         </div>
 
         <section class="lang">
-          <h2 class="menu__title">Выбор языка сайта</h2>
-          <a class="lang__link">EN</a>
-          <a class="lang__link">RU</a>
+          <h2 class="lang__title">Выбор языка сайта</h2>
+          <a href="#" class="lang__link">EN</a>
+          <a href="#" class="lang__link  lang__link--active">RU</a>
         </section>
+        </div>
       </section>
     </header>
 
     <main>
       <section class="slogan">
         <h2 class="slogan__title">Слоган</h2>
-        <span class="slogan__title">Разработка сложных сайтов  на ASP.NET</span>
+        <span class="slogan__caption">Разработка сложных сайтов  на ASP.NET</span>
         <a href="#" class="slogan__btn  btn">в портфолио</a>
       </section>
 
       <section class="about">
-        <h2 class="about__title">О компании</h2>
+        <h2 class="about__title  title">О компании</h2>
         <p class="about__text">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
-        <ul class="about__list">
-          <li class="about__item">Консультирование</li>
-          <li class="about__item">Менеджмент проектов</li>
-          <li class="about__item">Гарантия качества</li>
-          <li class="about__item">Выполнение сроков</li>
-        </ul>
+        <div class="about__inner">
+          <ul class="about__list">
+            <li class="about__item">Консультирование</li>
+            <li class="about__item">Менеджмент проектов</li>
+            <li class="about__item">Гарантия качества</li>
+            <li class="about__item">Выполнение сроков</li>
+          </ul>
+        </div>
       </section>
 
       <section class="portfolio">
-        <h2 class="portfolio__title">Наши работы</h2>
-        <p class="portfolio__text">В зависимости от особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
-        <ul class="portfolio__filter"> <!-- показываем только на десктопе -->
-          <li class="portfolio__item  portfolio__item--active">Все</li>
-          <li class="portfolio__item">сайты</li>
-          <li class="portfolio__item">системы</li>
-          <li class="portfolio__item">приложения</li>
-        </ul>
+        <header class="portfolio__header">
+          <h2 class="portfolio__title  title">Наши работы</h2>
+          <p class="portfolio__text">В зависимости от особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
+          <ul class="portfolio__filter"> <!-- показываем только на десктопе -->
+            <li class="portfolio__item  portfolio__item--active">Все</li>
+            <li class="portfolio__item">сайты</li>
+            <li class="portfolio__item">системы</li>
+            <li class="portfolio__item">приложения</li>
+          </ul>
+        </header>
         <!-- СЛАЙДЕР -->
         <section class="portfolio__slider  slider">
-          <input type="radio" name="slide" id="slide-1">
-          <input type="radio" name="slide" id="slide-2" checked>
-          <input type="radio" name="slide" id="slide-3">
-          <input type="radio" name="slide" id="slide-4">
+            <input type="radio" name="btn" id="btn-1">
+            <input type="radio" name="btn" id="btn-2" checked>
+            <input type="radio" name="btn" id="btn-3">
+            <input type="radio" name="btn" id="btn-4">
           <div class="slider__inner">
-            <div class="slider__slide">
-              <div class="slaider__item">
+            <!-- инпуты для слайдера на мобильной версии -->
+            <input type="radio" name="slide" id="slide-1">
+            <input type="radio" name="slide" id="slide-2">
+            <input type="radio" name="slide" id="slide-3" checked>
+            <input type="radio" name="slide" id="slide-4">
+            <div class="slider__slide"> <!-- на планшетном расширении этот контейнер становится одним отдельным слайдом -->
+              <div class="slider__item">
                 <a href="#" class="slider__item-link">
                   <img src="img/portfolio1-desc.jpg" width="320" height="359" alt="imax technology">
                 </a>
               </div>
-              <div class="slaider__item">
+              <div class="slider__item">
                 <a href="#" class="slider__item-link">
                   <img src="img/portfolio2-desc.jpg" width="320" height="359" alt="СтокМастер24">
                 </a>
               </div>
-              <div class="slaider__item">
+              <div class="slider__item">
                 <a href="#" class="slider__item-link">
                   <img src="img/premier-desc.jpg" width="320" height="359" alt="Premier">
                 </a>
               </div>
-              <div class="slaider__item">
+              <div class="slider__item">
                 <a href="#" class="slider__item-link">
                   <img src="img/portfolio4-desc.jpg" width="320" height="359" alt="iclebo">
                 </a>
               </div>
-              <div class="slaider__item">
+              <div class="slider__item">
                 <a href="#" class="slider__item-link">
                   <img src="img/portfolio5-desc.jpg" width="320" height="359" alt="wanexpo">
                   </a>
               </div>
             </div>
+
+            <div class="slider__slide"> <!-- второй большой слайд -->
+              <div class="slider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/portfolio1-desc.jpg" width="320" height="359" alt="imax technology">
+                </a>
+              </div>
+              <div class="slider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/portfolio2-desc.jpg" width="320" height="359" alt="СтокМастер24">
+                </a>
+              </div>
+              <div class="slider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/premier-desc.jpg" width="320" height="359" alt="Premier">
+                </a>
+              </div>
+              <div class="slider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/portfolio4-desc.jpg" width="320" height="359" alt="iclebo">
+                </a>
+              </div>
+              <div class="slider__item">
+                <a href="#" class="slider__item-link">
+                  <img src="img/portfolio5-desc.jpg" width="320" height="359" alt="wanexpo">
+                  </a>
+              </div>
+            </div>
+
+            <div class="slider__active"> <!-- навигация по слайдам на мобильной версии: отдельные картинки -->
+                <label class="slider__active-num" for="slide-1">01.</label>
+                <label class="slider__active-num" for="slide-2">02.</label>
+                <label class="slider__active-num" for="slide-3">03.</label>
+                <label class="slider__active-num" for="slide-4">04.</label>
+            </div>
           </div>
-          <div class="slider__active"> <!-- скрываем в моб.версии -->
-            <label for="slide-1">01.</label>
-            <label for="slide-2">02.</label>
-            <label for="slide-3">03.</label>
-            <label for="slide-4">04.</label>
-          </div>
-          <div class="slider__controls"> <!-- скрываем в моб.версии -->
-            <label for="slide-1">
-              <span class="slider-controls__prev">пред</span>
-              <span class="slider-controls__next">след</span>
-            </label>
-            <label for="slide-2">
-              <span class="slider-controls__prev">пред</span>
-              <span class="slider-controls__next">след</span>
-            </label>
-            <label for="slide-3">
-              <span class="slider-controls__prev">пред</span>
-              <span class="slider-controls__next">след</span>
-            </label>
-            <label for="slide-4">
-              <span class="slider-controls__prev">пред</span>
-              <span class="slider-controls__next">след</span>
-            </label>
+          <div class="slider__controls"> <!-- скрываем в моб.версии, навигация по большим слайдам, состоящим из нескольких картинок -->
+            <div class="slider__prev">
+                <label for="btn-4">пред</label>
+                <label for="btn-1">пред</label>
+                <label for="btn-2">пред</label>
+                <label for="btn-3">пред</label>
+            </div>
+            <div class="slider__active  slider__active--controls">
+              <label class="slider__active-num" for="btn-1">01.</label>
+              <label class="slider__active-num" for="btn-2">02.</label>
+              <label class="slider__active-num" for="btn-3">03.</label>
+              <label class="slider__active-num" for="btn-4">04.</label>
+            </div>
+            <div class="slider__next">
+              <label for="btn-2">след</label>
+              <label for="btn-3">след</label>
+              <label for="btn-4">след</label>
+              <label for="btn-1">след</label>
+            </div>
           </div>
         </section>
         <!-- /СЛАЙДЕР -->
       </section>
 
       <section class="news">
-        <h2 class="news__title">Последние новости</h2>
+        <h2 class="news__title  title">Последние новости</h2>
         <P class="news__subtitle">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
         <article class="news__item">
           <img src="img/news-mobile.jpg" width="300" height="177" alt="космическая станция">

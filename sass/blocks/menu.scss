@@ -1,0 +1,44 @@
+.menu {
+  width: 100%;
+  background-color: #ebf5f9;
+}
+
+.menu__wrapper {
+  display: flex;
+  @include container;
+  padding: 0 3.125%; /* 10px / 320px */
+  flex-wrap: wrap;
+  outline: 1px solid red;
+}
+
+.menu__title {
+  @include visually-hidden;
+}
+
+@media ($mobile-widths-fluid) {
+  .menu__wrapper {
+    @include container-fluid;
+  }
+}
+
+
+@media ($tablet-widths) {
+  .menu__wrapper {
+    @include container;
+    padding: 0 2.6%; /* 20px / 768px */
+  }
+}
+
+@media ($tablet-widths-fluid) {
+  .menu__wrapper {
+    @include container-fluid;
+  }
+}
+
+
+@media ($desktop-widths) {
+  .menu__wrapper {
+    @include container;
+    padding: 0 3.9%; /* 50px / 1280px */
+  }
+}
