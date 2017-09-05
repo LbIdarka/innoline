@@ -164,4 +164,8 @@ input[type="radio"] {
       display: block;
     }
   }
+  .slider__controls {
+    @include container;
+    margin-top: 35px;
+  }
 }

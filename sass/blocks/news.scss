@@ -1,0 +1,16 @@
+.news {
+  @include container;
+  margin-top: 55px;
+}
+
+.news__title {
+  width: 220px;
+  margin: 0 auto;
+}
+
+.news__subtitle {
+  margin: 60px 0 0;
+  padding:  0 15px;
+  @include font-style(16px, 26px, 400, inherit);
+  text-align: center;
+}

@@ -3,9 +3,12 @@
   margin-top: 100px;
 }
 
-.about__text {
-  outline: 1px solid green; /*for layout*/
+.about__header {
   @include container;
+  outline: 1px solid green; /*for layout*/
+}
+
+.about__text {
   padding: 30px 15px 220px;
   @include font-style(16px, 29px, 400, inherit);
   text-align: center;
@@ -37,7 +40,7 @@
 }
 
 @media ($mobile-widths-fluid) {
-  .about__text {
+  .about__header {
     @include container-fluid;
   }
 
@@ -47,8 +50,11 @@
 }
 
 @media ($tablet-widths) {
-  .about__text {
+  .about__header {
     @include container;
+  }
+
+  .about__text {
     padding: 40px 30px 430px;
   }
 
@@ -68,7 +74,7 @@
 }
 
 @media ($tablet-widths-fluid) {
-  .about__text {
+  .about__header {
     @include container-fluid;
   }
 
@@ -78,8 +84,11 @@
 }
 
 @media ($desktop-widths) {
-  .about__text {
+  .about__header {
     @include container;
+  }
+
+  .about__text {
     padding: 65px 180px 430px;
   }
 

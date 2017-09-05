@@ -10,7 +10,7 @@
 .title::before {
   content: "";
   position: absolute;
-  top: 48px;
+  bottom: -20px;
   left: calc(50% - 50px); /* центруем полоску */
   width: 100px;
   height: 4px;
