@@ -184,40 +184,54 @@
         <h2 class="news__title  title">Последние новости</h2>
         <p class="news__subtitle">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
         <article class="news__item">
-          <img src="img/news-mobile.jpg" width="300" height="177" alt="космическая станция">
-          <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
-          <time datetime="2015-03-25">25.03.2015</time>
-          <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
+          <div class="news__item-img">
+            <img src="img/news-mobile.jpg" width="300" height="177" alt="космическая станция">
+          </div>
+          <div class="news__item-desc">
+            <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
+            <time class="news__item-time" datetime="2015-03-25">25.03.2015</time>
+            <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
+          </div>
         </article>
         <article class="news__item">
-          <img src="img/news-mobile.jpg" width="300" height="177" alt="космическая станция">
-          <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
-          <time datetime="2015-03-25">25.03.2015</time>
-          <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
+          <div class="news__item-img  news__item-img--order">
+            <img class="news__item-img" src="img/news-mobile.jpg" width="300" height="177" alt="космическая станция">
+          </div>
+          <div class="news__item-desc">
+            <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
+            <time class="news__item-time" datetime="2015-03-25">25.03.2015</time>
+            <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
+          </div>
         </article>
         <article class="news__item">
-          <img src="img/news2-desc.jpg" width="560" height="329" alt="Байкал">
-          <h3 class="news__item-caption">Заповедные территории России</h3>
-          <time datetime="2015-03-25">25.03.2015</time>
-          <p class="news__item-text">Байкал - самое глубокое озеро на планете, крупнейший природный резервуар пресной воды. В Байкале обитает 2600 видов и подвидов водных животных, более половины которых являются эндемиками, то есть обитают только в этом водоеме.</p>
+          <div class="news__item-img  news__item-img--order">
+            <img class="news__item-img" src="img/news2-desc.jpg" width="560" height="329" alt="Байкал">
+          </div>
+          <div class="news__item-desc">
+            <h3 class="news__item-caption">Заповедные территории России</h3>
+            <time class="news__item-time" datetime="2015-03-25">25.03.2015</time>
+            <p class="news__item-text">Байкал - самое глубокое озеро на планете, крупнейший природный резервуар пресной воды. В Байкале обитает 2600 видов и подвидов водных животных, более половины которых являются эндемиками, то есть обитают только в этом водоеме.</p>
+          </div>
         </article>
       </section>
     </main>
 
     <footer>
       <section class="contacts">
-        <h2 class="contacts__title">Наши контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <a href="tel:+79600798800" class="contacts__link">+7 (960) 079 88 00</a>
-          </li>
-          <li class="contacts__item">
-            <a href="skype:arslanov_dr?call" class="contacts__link">arslanov_dr</a>
-          </li>
-          <li class="contacts__item">
-              <a href="mailto:mail@innoline.pro" class="contacts__link">mail@innoline.pro</a>
-          </li>
-        </ul>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Наши контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="tel:+79600798800" class="contacts__link">+7 (960) 079 88 00</a>
+            </li>
+            <li class="contacts__item">
+              <a href="skype:arslanov_dr?call" class="contacts__link">arslanov_dr</a>
+            </li>
+            <li class="contacts__item">
+                <a href="mailto:mail@innoline.pro" class="contacts__link">mail@innoline.pro</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="feedback">
