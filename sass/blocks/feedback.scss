@@ -1,0 +1,130 @@
+.feedback {
+  @include container;
+  padding: 35px 0 68px;
+  background: #ffffff;
+}
+
+.feedback__title {
+  margin: 0;
+  @include font-style(20px, 28px, 700, inherit);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback__form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.feedback__form fieldset {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-left: 10px;
+  border: 1px solid #9d9d9d;
+}
+
+.feedback__form legend {
+  padding: 0 10px;
+  @include font-style(12px, 22px, 400, #252525);
+}
+
+.feedback__form input,
+.feedback__form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.feedback__form textarea {
+  min-height: 190px;
+}
+
+.feedback__form input::-webkit-input-placeholder,
+.feedback__form textarea::-webkit-input-placeholder {
+  @include font-style(14px, 22px, 400, $color-text);
+}
+
+.feedback__form input:-moz-placeholder,
+.feedback__form input::-moz-placeholder,
+.feedback__form textarea:-moz-placeholder,
+.feedback__form textarea::-moz-placeholder {
+  @include font-style(14px, 22px, 400, $color-text);
+}
+
+.feedback__form input:-ms-input-placeholder,
+.feedback__form textarea:-ms-input-placeholder {
+  @include font-style(14px, 22px, 400, $color-text);
+}
+
+.feedback__form-tel input::-webkit-input-placeholder {
+  color: rgba(37, 37, 37, 0.5);
+}
+
+.feedback__form-tel input:-moz-placeholder,
+.feedback__form-tel input::-moz-placeholder {
+  color: rgba(37, 37, 37, 0.5);
+}
+
+.feedback__form-tel input:-ms-input-placeholder {
+  color: rgba(37, 37, 37, 0.5);
+}
+
+.feedback__form-tel legend {
+  @include visually-hidden;
+}
+
+.feedback__btn {
+  width: 184px;
+}
+
+@media ($mobile-widths-fluid) {
+  .feedback {
+    @include container-fluid;
+  }
+}
+
+
+@media ($tablet-widths) {
+  .feedback {
+    @include container;
+  }
+
+  .feedback__form {
+    display: flex;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feedback__form-inner {
+    width: 350px;
+  }
+
+  .feedback__btn {
+    margin-top: 16px;
+  }
+}
+
+@media ($tablet-widths-fluid) {
+  .feedback {
+    @include container-fluid;
+  }
+
+  .feedback__form-inner {
+    width: 45%; /* 350 / 768 */
+  }
+}
+
+@media ($desktop-widths) {
+  .feedback {
+    @include container;
+  }
+
+  .feedback__form {
+    width: 978px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}

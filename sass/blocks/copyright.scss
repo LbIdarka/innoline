@@ -1,0 +1,11 @@
+.copyright {
+  padding: 65px 0 60px;
+  background: #edf2f6;
+}
+
+.copyright__text {
+  @include container;
+  @include font-style(14px, 32px, 700, #494949);
+  text-align: center;
+  text-transform: uppercase;
+}

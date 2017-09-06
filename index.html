@@ -235,29 +235,35 @@
       </section>
 
       <section class="feedback">
-        <h2 class="feedback__title">Свяжитесь с нами, заполнив форму</h2>
+        <p class="feedback__title">Свяжитесь с нами, заполнив форму</p>
         <form action="#" method="get" class="feedback__form">
-          <fieldset>
-            <legend>Ваше имя</legend>
-            <input type="text" name="name" id="field-name" placeholder="Николай Андреевич">
-          </fieldset>
-          <div class="feedback__form-tel">
-            <label for="field-tel">Ваш номер телефона</label>
-            <input type="tel" name="tel" id="field-tel" placeholder="Ваш номер телефона">
+          <div class="feedback__form-inner">
+            <fieldset>
+              <legend>Ваше имя</legend>
+              <input type="text" name="name" id="field-name" placeholder="Николай Андреевич">
+            </fieldset>
+            <fieldset class="feedback__form-tel">
+              <legend for="field-tel">Ваш номер телефона</legend>
+              <input type="tel" name="tel" id="field-tel" placeholder="Ваш номер телефона">
+            </fieldset>
+            <fieldset>
+              <legend>Ваш e-mail</legend>
+              <input type="email" name="email" id="field-email" placeholder="companyname@gmail.com">
+            </fieldset>
           </div>
-          <fieldset>
-            <legend>Ваш e-mail</legend>
-            <input type="email" name="email" id="field-email">
-          </fieldset>
-          <fieldset>
-            <legend>Ваш вопрос</legend>
-            <textarea name="question" id="fiekd-question" placeholder="Привет, как дела?"></textarea>
-          </fieldset>
-          <button class="btn" type="submit">Отправить</button>
+          <div class="feedback__form-inner">
+            <fieldset>
+              <legend>Ваш вопрос</legend>
+              <textarea name="question" id="fiekd-question" placeholder="Привет, как дела?"></textarea>
+            </fieldset>
+          </div>
+          <button class="feedback__btn  btn" type="submit">Отправить</button>
         </form>
       </section>
 
-      <p class="copyright">2016 © INNOLINE. All rights reserved.</p>
+      <div class="copyright">
+        <p class="copyright__text">2016 © INNOLINE. All rights reserved.</p>
+      </div>
     </footer>
 
   </body>
