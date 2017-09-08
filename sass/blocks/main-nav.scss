@@ -29,4 +29,47 @@
   .main-nav {
     width: 640px;
   }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-nav__item {
+    margin-right: auto;
+  }
+
+  .main-nav__link {
+    position: relative;
+    @include font-style(15px, 11px, 700, inherit);
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &--active::before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: calc(50% - 50px); /* центруем полоску */
+        width: 100px;
+        height: 4px;
+        background: $color-mark;
+        border-radius: 10px;
+    }
+
+    &:hover:not(.main-nav__link--active),
+    &:focus {
+      color: $color-mark;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 }

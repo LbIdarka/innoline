@@ -5,6 +5,10 @@
   @include font-style(25px, 32px, 700, inherit);
   text-align: center;
   text-transform: uppercase;
+
+  &--no-underline::before {
+    opacity: 0;
+  }
 }
 
 .title::before {
