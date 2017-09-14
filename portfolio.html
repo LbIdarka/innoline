@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Innoline - разработка сложных сайтов  на ASP.NET</h1>
+      <h1 class="page-header__title">Портфолио Innoline</h1>
 
       <section class="menu">
         <div class="menu__wrapper">
@@ -284,24 +284,24 @@
         </ul>
 
         <div class="pagination">
-          <ul class="pagination-list">
-            <li class="pagination-item  pagination-item--prev">
-              <a class="pagination-link active" href="#">Пред</a>
+          <ul class="pagination__list">
+            <li class="pagination__item  pagination__item--prev">
+              <a class="pagination__link" href="#">Пред</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link active">01.</a>
+            <li class="pagination__item">
+              <a class="pagination__link">01.</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">02.</a>
+            <li class="pagination__item">
+              <a class="pagination__link  pagination__link--active" href="#">02.</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">03.</a>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">03.</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">04.</a>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">04.</a>
             </li>
-            <li class="pagination-item  pagination-item--next">
-              <a class="pagination-link" href="#">След</a>
+            <li class="pagination__item  pagination__item--next">
+              <a class="pagination__link" href="#">След</a>
             </li>
           </ul>
         </div>
@@ -309,46 +309,54 @@
     </main>
 
     <footer>
-      <section class="contacts">
-          <h2 class="contacts__title">Наши контакты</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a href="tel:+79600798800" class="contacts__link">+7 (960) 079 88 00</a>
-            </li>
-            <li class="contacts__item">
-              <a href="skype:arslanov_dr?call" class="contacts__link">arslanov_dr</a>
-            </li>
-            <li class="contacts__item">
-                <a href="mailto:mail@innoline.pro" class="contacts__link">mail@innoline.pro</a>
-            </li>
-          </ul>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <h2 class="contacts__title">Наши контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a href="tel:+79600798800" class="contacts__link">+7 (960) 079 88 00</a>
+              </li>
+              <li class="contacts__item">
+                <a href="skype:arslanov_dr?call" class="contacts__link">arslanov_dr</a>
+              </li>
+              <li class="contacts__item">
+                  <a href="mailto:mail@innoline.pro" class="contacts__link">mail@innoline.pro</a>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="feedback">
-          <h2 class="feedback__title">Свяжитесь с нами, заполнив форму</h2>
+          <p class="feedback__title">Свяжитесь с нами, заполнив форму</p>
           <form action="#" method="get" class="feedback__form">
-            <fieldset>
-              <legend>Ваше имя</legend>
-              <input type="text" name="name" id="field-name" placeholder="Николай Андреевич">
-            </fieldset>
-            <div class="feedback__form-tel">
-              <label for="field-tel">Ваш номер телефона</label>
-              <input type="tel" name="tel" id="field-tel" placeholder="Ваш номер телефона">
+            <div class="feedback__form-inner">
+              <fieldset>
+                <legend>Ваше имя</legend>
+                <input type="text" name="name" id="field-name" placeholder="Николай Андреевич">
+              </fieldset>
+              <fieldset class="feedback__form-tel">
+                <legend for="field-tel">Ваш номер телефона</legend>
+                <input type="tel" name="tel" id="field-tel" placeholder="Ваш номер телефона">
+              </fieldset>
+              <fieldset>
+                <legend>Ваш e-mail</legend>
+                <input type="email" name="email" id="field-email" placeholder="companyname@gmail.com">
+              </fieldset>
             </div>
-            <fieldset>
-              <legend>Ваш e-mail</legend>
-              <input type="email" name="email" id="field-email">
-            </fieldset>
-            <fieldset>
-              <legend>Ваш вопрос</legend>
-              <textarea name="question" id="fiekd-question" placeholder="Привет, как дела?"></textarea>
-            </fieldset>
-            <button class="btn" type="submit">Отправить</button>
+            <div class="feedback__form-inner">
+              <fieldset>
+                <legend>Ваш вопрос</legend>
+                <textarea name="question" id="fiekd-question" placeholder="Привет, как дела?"></textarea>
+              </fieldset>
+            </div>
+            <button class="feedback__btn  btn" type="submit">Отправить</button>
           </form>
         </section>
 
-      <p class="copyright">2016 © INNOLINE. All rights reserved.</p>
-    </footer>
+        <div class="copyright">
+          <p class="copyright__text">2016 © INNOLINE. All rights reserved.</p>
+        </div>
+      </footer>
 
   </body>
 </html>

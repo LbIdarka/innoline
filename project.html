@@ -11,16 +11,17 @@
       <h1 class="page-header__title">Наш проект Стокмастер24</h1>
 
       <section class="menu">
+        <div class="menu__wrapper">
         <h2 class="menu__title">Навигация по сайту</h2>
 
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Главная</a>
+              <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Портфолио</a>
+              <a href="portfolio.html" class="main-nav__link  main-nav__link--active">Портфолио</a>
             </li>
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Услуги</a>
@@ -35,29 +36,33 @@
         </nav>
 
         <div class="logo">
-          <a href="index.html" class="logo__link">
+          <a href="index.html">
             <img src="img/Innoline(1).png" width="32" height="32" alt="innolaine">
           </a>
         </div>
 
         <section class="lang">
-          <h2 class="menu__title">Выбор языка сайта</h2>
-          <a class="lang__link">EN</a>
-          <a class="lang__link">RU</a>
+          <h2 class="lang__title">Выбор языка сайта</h2>
+          <a href="#" class="lang__link">EN</a>
+          <a href="#" class="lang__link  lang__link--active">RU</a>
         </section>
+        </div>
       </section>
     </header>
 
     <main>
       <article class="work">
         <header class="work__header">
-          <h2 class="work__title">Стокмастер24</h2>
-          <div class="work__logo">
-            <img src="img/sm-logo.png" width="194" height="40" alt="логотип Стокмастер24">
+          <div class="work__inner">
+            <h2 class="work__title  title title--no-underline">Стокмастер24</h2>
+            <div class="work__logo">
+              <img src="img/sm-logo.png" width="194" height="40" alt="логотип Стокмастер24">
+            </div>
+            <div class="work__header-inner">
+              <p class="work__subtitle">Cистема работы с поставщиками</p>
+              <a class="work__link" href="#">wwww.sm24.innoline.pro</a>
+            </div>
           </div>
-          <p class="work__subtitle">Cистема работы с поставщиками
-            <a class="work__subtitle-link" href="#">wwww.sm24.innoline.pro</a>
-          </p>
         </header>
 
         <section class="work__desc  desc-work">
@@ -65,36 +70,38 @@
           <div class="desc-work__foto">
             <img src="img/sm-mob.jpg" width="300" height="652" alt="главная страница стокмаркета24">
           </div>
-          <p class="desc-work__stack"><span>Используемые технологии:</span>ASP.NET MVC, Entity Framework, Microsoft SQL, CMS Orchard, Java Script, jQuery, Bootstrap, CSS3, HTML5</p>
+          <p class="desc-work__stack"><b>Используемые технологии:</b> ASP.NET MVC, Entity Framework, Microsoft SQL, CMS Orchard, Java Script, jQuery, Bootstrap, CSS3, HTML5</p>
         </section>
       </article>
 
-      <div class="pagination">
-        <ul class="pagination-list">
-          <li class="pagination-item  pagination-item--prev">
-            <a class="pagination-link active" href="#">Пред</a>
+      <div class="pagination  pagination--margin">
+        <ul class="pagination__list">
+          <li class="pagination__item  pagination__item--prev">
+            <a class="pagination__link  pagination__link--prev" href="#">Sokolniki.com - конгрессно-выставочный центр</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link active">01.</a>
+          <li class="pagination__item">
+            <a class="pagination__link">01.</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">02.</a>
+          <li class="pagination__item">
+            <a class="pagination__link  pagination__link--active" href="#">02.</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">03.</a>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">03.</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">04.</a>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">04.</a>
           </li>
-          <li class="pagination-item  pagination-item--next">
-            <a class="pagination-link" href="#">След</a>
+          <li class="pagination__item  pagination__item--next">
+            <a class="pagination__link  pagination__link--next" href="#">Интернет-магазин часов premier-watch.ru</a>
           </li>
         </ul>
       </div>
+    </div>
     </main>
 
     <footer>
       <section class="contacts">
+        <div class="contacts__wrapper">
           <h2 class="contacts__title">Наши контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -107,9 +114,12 @@
                 <a href="mailto:mail@innoline.pro" class="contacts__link">mail@innoline.pro</a>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-      <p class="copyright">2016 © INNOLINE. All rights reserved.</p>
+      <div class="copyright">
+        <p class="copyright__text">2016 © INNOLINE. All rights reserved.</p>
+      </div>
     </footer>
 
   </body>
