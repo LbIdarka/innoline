@@ -2,8 +2,24 @@
   padding: 35px 0 0;
 }
 
+.work__header {
+  color: #ffffff;
+  background: $bg-blue;
+}
+
+.work__title {
+  padding-bottom: 15px;
+  color: $color-text;
+  background: #ffffff;
+}
+
+.work__inner {
+  width: 100%;
+}
+
 .work__logo {
-  margin-top: 30px;
+  width: 100%;
+  padding: 15px 0;
   background: #ffffff;
 }
 
@@ -13,15 +29,12 @@
   margin: 0 auto;
 }
 
-.work__header-inner {
-  margin-top: 15px;
-  padding: 20px 0;
-  color: #ffffff;
-  background: $bg-blue;
+.work__header-desc {
+  padding: 20px 10px;
 }
 
 .work__subtitle {
-  @include container;
+  margin: 0;
   @include font-style(16px, 21px, 700, inherit);
 }
 
@@ -32,8 +45,8 @@
 }
 
 @media ($mobile-widths-fluid) {
+
   .work__subtitle {
-    @include container-fluid;
     text-align: center;
   }
 
@@ -43,19 +56,15 @@
 }
 
 @media ($tablet-widths) {
-
-  .work__header {
-    background-image: linear-gradient(to bottom, #ffffff 60px, $bg-blue 62px);
-  }
-
   .work__inner {
     display: flex;
-    flex-wrap: wrap;
     padding: 0 20px;
+    flex-wrap: wrap;
   }
 
   .work__title {
     width: 100%;
+    padding-bottom: 40px;
     font-size: 35px;
     line-height: 1.2;
   }
@@ -65,14 +74,10 @@
     margin: 0;
     margin-right: 37px;
     padding-top: 20px;
-
-    & img {
-      margin-top: 27px;
-    }
   }
 
-  .work__header-inner {
-    margin-top: 20px;
+  .work__header-desc {
+    padding: 20px 0 15px;
     width: 287px;
   }
 
@@ -87,7 +92,7 @@
 }
 
 @media ($tablet-widths-fluid) {
-  .work__header-inner {
+  .work__header-desc {
     width: 37.36%; /* 287px / 768px */
   }
 }
@@ -104,21 +109,22 @@
 
   .work__logo {
     margin-right: 40px;
+    padding: 27px 0 25px;
   }
 
-  .work__header-inner {
+  .work__header-desc {
+    display: flex;
     width: 875px;
-    padding: 30px 0;
-    font-size: 0;
+    padding: 35px 0 30px;
+    align-items: center;
   }
 
   .work__subtitle {
-    display: inline-block;
     width: 50%;
   }
 
   .work__link {
-    display: inline-block;
+    display: block;
     width: 50%;
     margin: 0;
     text-align: right;
