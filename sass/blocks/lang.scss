@@ -1,14 +1,25 @@
 .lang {
   width: 40px;
-  outline: 1px solid green; /*for layout*/
+  text-align: right;
 }
 
 .lang__title {
   @include visually-hidden;
 }
 
-.lang-link {
+.lang__link {
   display: block;
+  @include font-style(15px, 2, 700, inherit);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-mark;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .lang__link--active {
@@ -18,6 +29,7 @@
 @media ($mobile-widths-fluid) {
   .lang {
     width: 12.5%; /* 40px / 320px */
+    margin-left: auto;
   }
 }
 
@@ -30,6 +42,8 @@
 @media ($desktop-widths) {
   .lang {
     width: 60px;
+    padding-left: 35px;
+    border-left: 1px solid rgba(51, 61, 72, 0.2);
   }
 }
 

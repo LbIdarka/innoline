@@ -1,5 +1,4 @@
 .slogan {
-  outline: 1px solid red; /*for layout*/
   width: 100%;
   @include container;
   padding-top: 130px;
@@ -20,6 +19,7 @@
 
 @media ($mobile-widths-fluid) {
   .slogan {
+    height: calc(100vh - 53px);
     @include container-fluid;
     padding-top: 50%;
   }
@@ -50,6 +50,7 @@
 
 @media ($desktop-widths) {
   .slogan {
+    height: calc(100vh - 109px);
     @include container;
     padding: 0 3.9%; /* 50px / 1280px */
     padding-top: 200px;

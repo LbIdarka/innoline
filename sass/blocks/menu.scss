@@ -2,6 +2,7 @@
   width: 100%;
   padding: 10px 0;
   background-color: #ebf5f9;
+  border-bottom: 1px solid rgba(51, 61, 72, 0.2);
 }
 
 .menu__wrapper {
@@ -9,6 +10,7 @@
   @include container;
   padding: 0 3.125%; /* 10px / 320px */
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .menu__title {
@@ -25,7 +27,6 @@
 @media ($tablet-widths) {
   .menu__wrapper {
     @include container;
-    padding: 0 2.6%; /* 20px / 768px */
   }
 }
 
@@ -37,8 +38,25 @@
 
 
 @media ($desktop-widths) {
+
+  .menu {
+    padding: 30px 0 15px;
+    background-color: transparent;
+    border-bottom: none;
+  }
+
   .menu__wrapper {
     @include container;
-    padding: 0 3.9%; /* 50px / 1280px */
+    padding: 0;
+  }
+}
+
+@media ($desktop-widths-only) {
+  .menu--fixed {
+    position: fixed;
+    padding: 18px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(51, 61, 72, 0.2);
+    z-index: 2;
   }
 }

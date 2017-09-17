@@ -47,7 +47,7 @@
   .main-nav--opened .main-nav__toggle {
     position: absolute;
     top: 15px;
-    right: 5px;
+    left: 0;
     width: 28px;
     height: 5px;
     background: none;
@@ -92,14 +92,16 @@
 
   .main-nav--opened .main-nav__list {
     position: absolute;
-    top: 32px;
-    left: -10px;
+    top: 42px;
+    left: 0;
     display: block;
     width: 300px;
     margin: 0;
     padding: 0;
     list-style: none;
     background: #ebf5f9;
+    animation: 1s linear;
+    animation-name: menu;
   }
 
   .main-nav--opened .main-nav__item {
@@ -110,7 +112,7 @@
   .main-nav--opened .main-nav__item a {
     display: block;
     padding: 12px 21px 13px;
-    @include font-style(14px, 32px, 700, inherit);
+    @include font-style(14px, 2, 700, inherit);
     text-transform: uppercase;
     text-decoration: none;
     border-top: 1px solid #d8ebf7;
@@ -127,6 +129,28 @@
     &:active {
       opacity: 0.5;
       background: inherit;
+    }
+  }
+
+  @keyframes menu {
+    0% {
+        left: -100%;
+    }
+
+    20% {
+      left: -80%;
+    }
+
+    50% {
+      left: -50%;
+    }
+
+    70% {
+      left: -20%;
+    }
+
+    100% {
+      left: 0;
     }
   }
 
@@ -154,10 +178,7 @@
     border-top: 1px solid #d8ebf7;
     border-bottom: 1px solid #f7fcfd;
   }
-
-
 }
-
 
 
 @media ($mobile-widths-fluid) {
@@ -173,9 +194,11 @@
   }
 }
 
+
 @media ($desktop-widths) {
   .main-nav {
-    width: 640px;
+    width: 616px;
+    margin-left: 160px;
   }
 
   .main-nav__toggle {
@@ -196,7 +219,7 @@
 
   .main-nav__link {
     position: relative;
-    @include font-style(15px, 11px, 700, inherit);
+    @include font-style(15px, 2, 700, inherit);
     text-decoration: none;
     text-transform: uppercase;
 

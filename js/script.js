@@ -1,3 +1,5 @@
+//======= гамбургерное меню =======//
+
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var bgPosition = document.querySelector('.page-index');
@@ -14,3 +16,19 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+//======= функция для фиксированной навигации =======//
+
+window.onscroll = function() {//событие скрола
+  var stickyMenu = document.querySelector(".menu"); //задаем переменную для элемента, который будет "липнуть"
+  var scrolled = window.pageYOffset; //проверяем состояние скрола
+  var logo = document.querySelector('.logo');
+
+  if(scrolled >= 908) { //если скрол больше или равен отступу меню + слоган, то добавляем класс с position: fixed;
+    stickyMenu.classList.add("menu--fixed");
+    logo.classList.add('logo--menu-fixed');
+  } else  {
+    stickyMenu.classList.remove("menu--fixed");
+    logo.classList.remove('logo--menu-fixed');
+  }
+}
