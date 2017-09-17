@@ -2,6 +2,10 @@
   background-image: url("../img/bg-mob.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  &--nojs {
+    background-position-y: 295px;
+  }
 }
 
 @media ($tablet-widths) {

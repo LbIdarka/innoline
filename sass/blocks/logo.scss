@@ -16,12 +16,12 @@
 @media ($tablet-widths-fluid) {
   .logo {
     width: 27.11%; /* 320px / 1180px */
-    order: -1;
   }
 }
 
 @media ($desktop-widths) {
   .logo {
     width: 320px;
+    order: -1;
   }
 }

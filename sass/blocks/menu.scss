@@ -1,5 +1,6 @@
 .menu {
   width: 100%;
+  padding: 10px 0;
   background-color: #ebf5f9;
 }
 
@@ -8,7 +9,6 @@
   @include container;
   padding: 0 3.125%; /* 10px / 320px */
   flex-wrap: wrap;
-  outline: 1px solid red;
 }
 
 .menu__title {
