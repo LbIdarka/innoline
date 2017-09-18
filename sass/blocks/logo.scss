@@ -5,11 +5,12 @@
 
 .logo__img {
   display: block;
-
-  &--menu-fixed {
-    display: none;
-  }
 }
+
+.logo__img-color {
+  display: none;
+  }
+
 
 @media ($mobile-widths-fluid) {
   .logo {
@@ -48,11 +49,11 @@
 }
 
 @media ($desktop-widths-only) {
-  .logo__img {
+  .logo__img--grey {
     display: none;
+  }
 
-    &--menu-fixed {
-      display: block;
-      }
+  .logo__img-color--menu-fixed {
+    display: block;
   }
 }

@@ -22,13 +22,16 @@ navToggle.addEventListener('click', function() {
 window.onscroll = function() {//событие скрола
   var stickyMenu = document.querySelector(".menu"); //задаем переменную для элемента, который будет "липнуть"
   var scrolled = window.pageYOffset; //проверяем состояние скрола
-  var logo = document.querySelector('.logo');
+  var logoRed = document.querySelector('.logo__img-color');
+  var logo = document.querySelector('.logo__img');
 
   if(scrolled >= 908) { //если скрол больше или равен отступу меню + слоган, то добавляем класс с position: fixed;
     stickyMenu.classList.add("menu--fixed");
-    logo.classList.add('logo--menu-fixed');
+    logo.classList.add('logo__img--grey');
+    logoRed.classList.add('logo__img-color--menu-fixed');
   } else  {
     stickyMenu.classList.remove("menu--fixed");
-    logo.classList.remove('logo--menu-fixed');
+    logo.classList.remove('logo__img--grey');
+    logoRed.classList.remove('logo__img-color--menu-fixed');
   }
 }
