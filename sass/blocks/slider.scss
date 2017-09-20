@@ -74,6 +74,7 @@ input[type="radio"] {
 
   .slider__item {
     width: 350px;
+    margin-bottom: 25px;
 
     &:nth-child(odd) {
       margin-right: auto;
@@ -155,6 +156,7 @@ input[type="radio"] {
 
   .slider__item {
     width: 370px;
+    margin-bottom: 0;
 
     &:nth-child(odd) {
       margin-right: 0;

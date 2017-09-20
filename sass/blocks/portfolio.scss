@@ -1,6 +1,5 @@
 .portfolio {
   position: relative;
-  outline: 1px solid red; /*for layout*/
   margin-top: 45px;
   background: #ffffff;
 }
@@ -93,6 +92,20 @@
 
     &:not(:last-child) {
       margin-right: auto;
+    }
+  }
+
+  .portfolio__item a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $color-mark;
+    }
+
+    &:active {
+      opacity: 0.5;
     }
   }
 

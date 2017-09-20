@@ -1,7 +1,7 @@
 .contacts {
   width: 100%;
   margin-top: 35px;
-  padding: 33px 0 45px;
+  padding: 33px 0 12px;
   color: #ffffff;
   background-color: $bg-blue;
 }
@@ -27,9 +27,22 @@
 
 .contacts__link {
   display: block;
-  padding-left: 55px;
+  padding: 5px 0 7px 55px;
+  // padding-left: 55px;
   @include font-style(20px, 25px, 700, #ffffff);
   text-decoration: none;
+
+  &--icon-tel {
+    background: url(../img/icon-tel-mob.svg) no-repeat 5px 0;
+  }
+
+  &--icon-skype {
+    background: url(../img/icon-skype.svg) no-repeat;
+  }
+
+  &--icon-mail {
+    background: url(../img/icon-mail.svg) no-repeat 0 center;
+  }
 
   &:hover,
   &:focus {
@@ -82,8 +95,12 @@
     @include container-fluid;
   }
 
+  .contacts__item {
+    width: 250px;
+  }
+
   .contacts__link {
-    padding-left: 16.6%; /* 50px / 300px */
+    padding-left: 18%;
   }
 }
 
