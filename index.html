@@ -6,11 +6,11 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Innoline</title>
   </head>
-  <body class="page-index  page-index--nojs">
+  <body class="page-current  page-current--nojs">
     <header class="page-header">
       <h1 class="page-header__title">Innoline - разработка сложных сайтов  на ASP.NET</h1>
 
-      <section class="menu">
+      <section class="menu  menu--border-no">
         <div class="menu__wrapper">
         <h2 class="menu__title">Навигация по сайту</h2>
 
@@ -36,7 +36,10 @@
         </nav>
 
         <div class="logo">
-          <img class="logo__img" src="img/Innoline(1).png" width="32" height="32" alt="innolaine">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo.png">
+            <img class="logo__img"  src="img/Innoline(1).png" alt="логотип innolaine">
+          </picture>
           <img class="logo__img-color " src="img/logo-color.png" width="319" height="64" alt="innolaine">
         </div>
 
@@ -99,33 +102,53 @@
           <div class="slider__inner">
             <!-- инпуты для слайдера на мобильной версии -->
             <input type="radio" name="slide" id="slide-1">
-            <input type="radio" name="slide" id="slide-2">
-            <input type="radio" name="slide" id="slide-3" checked>
+            <input type="radio" name="slide" id="slide-2" checked>
+            <input type="radio" name="slide" id="slide-3">
             <input type="radio" name="slide" id="slide-4">
             <div class="slider__slide"> <!-- на планшетном расширении этот контейнер становится одним отдельным слайдом -->
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/portfolio1-desc.jpg" width="320" height="359" alt="imax technology">
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="img/portfolio1-desc.jpg">
+                    <source media="(min-width: 728px)" srcset="img/portfolio-tablet.jpg">
+                    <img src="img/portfolio1-desc.jpg" alt="пример нашей работы">
+                  </picture>
                 </a>
               </div>
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/portfolio2-desc.jpg" width="320" height="359" alt="СтокМастер24">
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="img/premier-desc.jpg">
+                    <source media="(min-width: 728px)" srcset="img/premier-tablet.jpg">
+                    <img src="img/premier-mobile.jpg" alt="пример нашей работы">
+                  </picture>
                 </a>
               </div>
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/premier-desc.jpg" width="320" height="359" alt="Premier">
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="img/portfolio2-desc.jpg">
+                    <source media="(min-width: 728px)" srcset="img/portfolio-tablet.jpg">
+                    <img src="img/portfolio1-desc.jpg" alt="пример нашей работы">
+                  </picture>
                 </a>
               </div>
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/portfolio4-desc.jpg" width="320" height="359" alt="iclebo">
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="img/portfolio4-desc.jpg">
+                    <source media="(min-width: 728px)" srcset="img/premier-tablet.jpg">
+                    <img src="img/premier-mobile.jpg" alt="пример нашей работы">
+                  </picture>
                 </a>
               </div>
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/portfolio5-desc.jpg" width="320" height="359" alt="wanexpo">
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="img/portfolio4-desc.jpg">
+                    <source media="(min-width: 728px)" srcset="img/portfolio-tablet.jpg">
+                    <img src="img/premier-mobile.jpg" alt="пример нашей работы">
+                    </picture>
                   </a>
               </div>
             </div>
@@ -133,27 +156,47 @@
             <div class="slider__slide"> <!-- второй большой слайд -->
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/portfolio1-desc.jpg" width="320" height="359" alt="imax technology">
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="img/portfolio1-desc.jpg">
+                    <source media="(min-width: 728px)" srcset="img/portfolio-tablet.jpg">
+                    <img src="img/portfolio1-desc.jpg" alt="пример нашей работы">
+                  </picture>
                 </a>
               </div>
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/portfolio2-desc.jpg" width="320" height="359" alt="СтокМастер24">
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="img/premier-desc.jpg">
+                    <source media="(min-width: 728px)" srcset="img/premier-tablet.jpg">
+                    <img src="img/premier-mobile.jpg" alt="пример нашей работы">
+                  </picture>
                 </a>
               </div>
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/premier-desc.jpg" width="320" height="359" alt="Premier">
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="img/portfolio2-desc.jpg">
+                    <source media="(min-width: 728px)" srcset="img/portfolio-tablet.jpg">
+                    <img src="img/premier-mobile.jpg.jpg" alt="пример нашей работы">
+                  </picture>
                 </a>
               </div>
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/portfolio4-desc.jpg" width="320" height="359" alt="iclebo">
+                  <picture>
+                      <source media="(min-width: 1180px)" srcset="img/portfolio4-desc.jpg">
+                      <source media="(min-width: 728px)" srcset="img/premier-tablet.jpg">
+                    <img src="img/premier-mobile.jpg" alt="пример нашей работы">
+                  </picture>
                 </a>
               </div>
               <div class="slider__item">
                 <a href="#" class="slider__item-link">
-                  <img src="img/portfolio5-desc.jpg" width="320" height="359" alt="wanexpo">
+                  <picture>
+                    <source media="(min-width: 1180px)" srcset="img/portfolio5-desc.jpg">
+                    <source media="(min-width: 728px)" srcset="img/portfolio-tablet.jpg">
+                    <img src="img/premier-mobile.jpg" alt="пример нашей работы">
+                    </picture>
                   </a>
               </div>
             </div>
@@ -194,7 +237,11 @@
         <p class="news__subtitle">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
         <article class="news__item">
           <div class="news__item-img">
-            <img src="img/news-mobile.jpg" width="300" height="177" alt="космическая станция">
+            <picture>
+              <source media="(min-width: 1180px)" srcset="img/news-desc.jpg">
+              <source media="(min-width: 728px)" srcset="img/news-tablet.jpg">
+              <img src="img/news-mobile.jpg" alt="космическая станция">
+            </picture>
           </div>
           <div class="news__item-desc">
             <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
@@ -204,7 +251,11 @@
         </article>
         <article class="news__item">
           <div class="news__item-img  news__item-img--order">
-            <img class="news__item-img" src="img/news-mobile.jpg" width="300" height="177" alt="космическая станция">
+            <picture>
+              <source media="(min-width: 1180px)" srcset="img/news-desc.jpg">
+              <source media="(min-width: 728px)" srcset="img/news-tablet.jpg">
+              <img src="img/news-mobile.jpg" alt="космическая станция">
+            </picture>
           </div>
           <div class="news__item-desc">
             <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>

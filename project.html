@@ -14,40 +14,43 @@
         <div class="menu__wrapper">
         <h2 class="menu__title">Навигация по сайту</h2>
 
-        <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="portfolio.html" class="main-nav__link  main-nav__link--active">Портфолио</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Услуги</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">О нас</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <nav class="main-nav main-nav--closed  main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="portfolio.html" class="main-nav__link  main-nav__link--active">Портфолио</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Услуги</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">О нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-        <div class="logo">
-          <a href="index.html">
-            <img src="img/Innoline(1).png" width="32" height="32" alt="innolaine">
-          </a>
-        </div>
+          <div class="logo">
+            <a href="index.html">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-color.png">
+                    <img class="logo__img"  src="img/Innoline(1).png" alt="логотип innolaine">
+                  </picture>
+            </a>
+          </div>
 
-        <section class="lang">
-          <h2 class="lang__title">Выбор языка сайта</h2>
-          <a href="#" class="lang__link">EN</a>
-          <a href="#" class="lang__link  lang__link--active">RU</a>
+          <section class="lang">
+            <h2 class="lang__title">Выбор языка сайта</h2>
+            <a href="#" class="lang__link">EN</a>
+            <a href="#" class="lang__link  lang__link--active">RU</a>
+          </section>
+          </div>
         </section>
-        </div>
-      </section>
     </header>
 
     <main>
@@ -68,7 +71,11 @@
         <section class="work__desc  desc-work">
           <p class="desc-work__text">Система на ASP.NET для работы с поставщиками. Организация работы по скупке и распределению стока всех категорий от продуктовой линейки до строительных материалов. Имеется личный кабинет, доска объявлений, учет и формирование сделок на основе заявленных требований. Внутренняя CRM-система ведет учет поставщиков и покупателей, отслеживается активность менеджеров, выставляются необходимые производственные задачи, присутствует расширенная коммуникация между пользователями и администрацией сайта.</p>
           <div class="desc-work__foto">
-            <img src="img/sm-mob.jpg" width="300" height="652" alt="главная страница стокмаркета24">
+            <picture>
+              <source media="(min-width: 1180px)" srcset="img/sm-desc.jpg">
+              <source media="(min-width: 728px)" srcset="img/sm-tablet.jpg">
+              <img src="img/sm-mob.jpg" alt="главная страница стокмаркета24">
+            </picture>
           </div>
           <p class="desc-work__stack"><b>Используемые технологии:</b> ASP.NET MVC, Entity Framework, Microsoft SQL, CMS Orchard, Java Script, jQuery, Bootstrap, CSS3, HTML5</p>
         </section>
@@ -80,10 +87,10 @@
             <a class="pagination__link  pagination__link--prev" href="#">Sokolniki.com - конгрессно-выставочный центр</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link">01.</a>
+            <a class="pagination__link"  href="#">01.</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link  pagination__link--active" href="#">02.</a>
+            <a class="pagination__link  pagination__link--active">02.</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">03.</a>
@@ -100,18 +107,18 @@
     </main>
 
     <footer>
-      <section class="contacts">
+      <section class="contacts  contacts--portfolio">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Наши контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <a href="tel:+79600798800" class="contacts__link">+7 (960) 079 88 00</a>
+              <a href="tel:+79600798800" class="contacts__link  contacts__link--icon-tel">+7 (960) 079 88 00</a>
             </li>
             <li class="contacts__item">
-              <a href="skype:arslanov_dr?call" class="contacts__link">arslanov_dr</a>
+              <a href="skype:arslanov_dr?call" class="contacts__link  contacts__link--icon-skype">arslanov_dr</a>
             </li>
             <li class="contacts__item">
-                <a href="mailto:mail@innoline.pro" class="contacts__link">mail@innoline.pro</a>
+                <a href="mailto:mail@innoline.pro" class="contacts__link  contacts__link--icon-mail">mail@innoline.pro</a>
             </li>
           </ul>
         </div>

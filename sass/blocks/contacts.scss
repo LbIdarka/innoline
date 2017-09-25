@@ -46,11 +46,12 @@
 
   &:hover,
   &:focus {
-    color: $color-mark;
+    text-decoration: underline;
   }
 
   &:active {
     opacity: 0.8;
+    text-decoration: none;
   }
 }
 
@@ -107,10 +108,14 @@
 @media ($desktop-widths) {
   .contacts {
     margin-top: 150px;
+
+    &--portfolio {
+      margin-top: 80px;
+    }
   }
 
   .contacts__wrapper {
-    @include container
+    @include container;
   }
 
   .contacts__list {

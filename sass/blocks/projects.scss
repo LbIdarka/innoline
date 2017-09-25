@@ -95,6 +95,10 @@
     display: block;
   }
 
+  .projects__item:nth-last-child(n+2) {
+    margin-bottom: 0;
+  }
+
   .projects__foto img {
     margin: 0;
   }

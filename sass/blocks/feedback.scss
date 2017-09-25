@@ -120,6 +120,7 @@
 @media ($desktop-widths) {
   .feedback {
     @include container;
+    padding: 80px 0 90px;
   }
 
   .feedback__form {

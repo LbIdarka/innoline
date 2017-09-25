@@ -102,6 +102,7 @@
     background: #ebf5f9;
     animation: 1s linear;
     animation-name: menu;
+    z-index: 2;
   }
 
   .main-nav--opened .main-nav__item {
@@ -165,6 +166,7 @@
 
   .main-nav--nojs .main-nav__list {
     position: static;
+    display: block;
     width: 100%;
     order: 3;
   }
@@ -177,20 +179,6 @@
     text-decoration: none;
     border-top: 1px solid #d8ebf7;
     border-bottom: 1px solid #f7fcfd;
-  }
-}
-
-
-@media ($mobile-widths-fluid) {
-  .main-nav {
-    width: 12.5%; /* 40px / 320px */
-  }
-}
-
-
-@media ($tablet-widths-fluid) {
-  .main-nav {
-    width: 50%; /*640px / 1280px */
   }
 }
 
@@ -211,6 +199,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    order: 2;
   }
 
   .main-nav__item {

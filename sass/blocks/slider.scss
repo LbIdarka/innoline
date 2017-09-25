@@ -12,7 +12,7 @@ input[type="radio"] {
 }
 
 .slider__item img {
-  display: block;
+  // display: block;
   margin: 0 auto;
 }
 
@@ -164,8 +164,21 @@ input[type="radio"] {
 
     &:last-child {
       display: block;
+      text-align: right;
     }
   }
+
+  .slider__item-link {
+    display: block;
+  }
+
+  .slider__item  img {
+    display: inline;
+    min-height: 410px;
+    margin: 0;
+    object-fit: cover;
+  }
+
   .slider__controls {
     @include container;
     margin-top: 35px;

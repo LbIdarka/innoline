@@ -42,7 +42,10 @@
   .menu {
     padding: 30px 0 15px;
     background-color: transparent;
-    border-bottom: none;
+
+    &--border-no {
+      border-bottom: none;
+    }
   }
 
   .menu__wrapper {
@@ -54,6 +57,7 @@
 @media ($desktop-widths-only) {
   .menu--fixed {
     position: fixed;
+    top: 0;
     padding: 18px;
     background-color: #ffffff;
     border-bottom: 1px solid rgba(51, 61, 72, 0.2);

@@ -2,9 +2,9 @@
 
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var bgPosition = document.querySelector('.page-index');
+var bgPosition = document.querySelector('.page-current');
 
-bgPosition.classList.remove('page-index--nojs');
+bgPosition.classList.remove('page-current--nojs');
 navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function() {
@@ -25,7 +25,7 @@ window.onscroll = function() {//событие скрола
   var logoRed = document.querySelector('.logo__img-color');
   var logo = document.querySelector('.logo__img');
 
-  if(scrolled >= 908) { //если скрол больше или равен отступу меню + слоган, то добавляем класс с position: fixed;
+  if(scrolled) { //если скрол больше или равен отступу меню + слоган, то добавляем класс с position: fixed;
     stickyMenu.classList.add("menu--fixed");
     logo.classList.add('logo__img--grey');
     logoRed.classList.add('logo__img-color--menu-fixed');

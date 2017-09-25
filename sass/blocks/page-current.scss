@@ -1,4 +1,4 @@
-.page-index {
+.page-current {
   background-image: url("../img/bg-mob.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -9,14 +9,18 @@
 }
 
 @media ($tablet-widths) {
-  .page-index {
+  .page-current {
     background-image: url("../img/bg-tablet.jpg");
   }
 
 }
 
 @media ($desktop-widths) {
-  .page-index {
+  .page-current {
     background-image: url("../img/bg-desc.jpg");
+
+    &--nojs {
+      background-position-y: 0;
+    }
   }
 }
