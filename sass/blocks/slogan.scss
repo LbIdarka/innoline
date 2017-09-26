@@ -1,7 +1,7 @@
 .slogan {
   width: 100%;
   @include container;
-  padding-top: 130px;
+  padding-top: 136px;
 }
 
 .slogan__title {
@@ -11,7 +11,7 @@
 .slogan__caption {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   @include font-style(14px, 25px, 700, inherit);
   text-align: center;
   text-transform: uppercase;

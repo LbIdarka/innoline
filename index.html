@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <style>
+  HTML {
+    background: url('img/mobile.jpg' ) 50% 0 no-repeat;
+  }
+/*
+  @media (min-width: 800px) {
+    HTML {
+      background-image: url('img/page-tablet.jpg' );
+    }
+  }
+
+  @media (min-width: 1200px) {
+    HTML {
+      background-image: url('img/page-desktop.jpg' );
+    }
+  }
+*/
+  }
+</style>
     <title>Innoline</title>
   </head>
   <body class="page-current  page-current--nojs">
@@ -298,21 +319,21 @@
         <p class="feedback__title">Свяжитесь с нами, заполнив форму</p>
         <form action="#" method="get" class="feedback__form">
           <div class="feedback__form-inner">
-            <fieldset>
+            <fieldset class="feedback__form-title">
               <legend>Ваше имя</legend>
               <input type="text" name="name" id="field-name" placeholder="Николай Андреевич">
             </fieldset>
-            <fieldset class="feedback__form-tel">
+            <fieldset class="feedback__form-title  feedback__form-title--tel">
               <legend for="field-tel">Ваш номер телефона</legend>
               <input type="tel" name="tel" id="field-tel" placeholder="Ваш номер телефона">
             </fieldset>
-            <fieldset>
+            <fieldset class="feedback__form-title">
               <legend>Ваш e-mail</legend>
               <input type="email" name="email" id="field-email" placeholder="companyname@gmail.com">
             </fieldset>
           </div>
           <div class="feedback__form-inner">
-            <fieldset>
+            <fieldset class="feedback__form-title">
               <legend>Ваш вопрос</legend>
               <textarea name="question" id="fiekd-question" placeholder="Привет, как дела?"></textarea>
             </fieldset>

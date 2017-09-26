@@ -3,6 +3,7 @@
   display: block;
   margin: 0;
   @include font-style(25px, 32px, 700, inherit);
+  letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
 
@@ -14,7 +15,7 @@
 .title::before {
   content: "";
   position: absolute;
-  bottom: -20px;
+  bottom: -22px;
   left: calc(50% - 50px); /* центруем полоску */
   width: 100px;
   height: 4px;

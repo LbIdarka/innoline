@@ -1,27 +1,32 @@
 .feedback {
   @include container;
-  padding: 35px 0 68px;
+  padding: 32px 0 70px;
   background: #ffffff;
 }
 
 .feedback__title {
   margin: 0;
   @include font-style(20px, 28px, 700, inherit);
+  letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
 }
 
 .feedback__form {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 13px;
 }
 
-.feedback__form fieldset {
+.feedback__form-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding: 0;
   padding-left: 10px;
   border: 1px solid #9d9d9d;
+
+  &--tel {
+  margin-bottom: 18px;
+  }
 }
 
 .feedback__form legend {
@@ -29,16 +34,24 @@
   @include font-style(12px, 22px, 400, #252525);
 }
 
+.feedback__form-title--tel legend {
+  @include visually-hidden;
+}
+
 .feedback__form input,
 .feedback__form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 0 10px 12px;
   border: none;
   outline: none;
 }
 
+.feedback__form-title--tel input {
+  padding: 14px;
+}
+
 .feedback__form textarea {
-  min-height: 190px;
+  min-height: 172px;
 }
 
 .feedback__form input::-webkit-input-placeholder,
@@ -58,25 +71,25 @@
   @include font-style(14px, 22px, 400, $color-text);
 }
 
-.feedback__form-tel input::-webkit-input-placeholder {
+.feedback__form-title--tel input::-webkit-input-placeholder {
   color: rgba(37, 37, 37, 0.5);
 }
 
-.feedback__form-tel input:-moz-placeholder,
-.feedback__form-tel input::-moz-placeholder {
+.feedback__form-title--tel input:-moz-placeholder,
+.feedback__form-title--tel input::-moz-placeholder {
   color: rgba(37, 37, 37, 0.5);
 }
 
-.feedback__form-tel input:-ms-input-placeholder {
+.feedback__form-title--tell input:-ms-input-placeholder {
   color: rgba(37, 37, 37, 0.5);
 }
 
-.feedback__form-tel legend {
-  @include visually-hidden;
-}
 
 .feedback__btn {
   width: 184px;
+  margin-top: 35px;
+  margin-left: 54px;
+  padding: 10px;
 }
 
 @media ($mobile-widths-fluid) {

@@ -4,13 +4,14 @@
   "private": true,
   "description": "Innoline - разработка сложных сайтов  на ASP.NET",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.5.3",
     "browser-sync": "2.18.2",
     "gulp": "3.9.1",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
     "gulp-sass": "2.3.2",
-    "@htmlacademy/editorconfig-cli": "0.1.x"
+    "pixel-glass": "^1.0.13"
   },
   "scripts": {
     "test": "editorconfig-cli",

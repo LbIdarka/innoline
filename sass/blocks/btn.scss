@@ -2,7 +2,8 @@
   display: block;
   width: 142px;
   margin: 0 auto;
-  padding: 8px;
+  margin-left: 75px;
+  padding: 4px;
   @include font-style(14px, 32px, 700, inherit);
   text-align: center;
   text-transform: uppercase;
@@ -22,7 +23,12 @@
     opacity: 0.5;
     transform: scale(1);
   }
+}
 
+@media ($mobile-widths-fluid) {
+  .btn {
+    margin: 0 auto;
+  }
 }
 
 @media ($tablet-widths) {

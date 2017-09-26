@@ -1,6 +1,6 @@
 .menu {
   width: 100%;
-  padding: 10px 0;
+  padding: 8px 0;
   background-color: #ebf5f9;
   border-bottom: 1px solid rgba(51, 61, 72, 0.2);
 }
@@ -8,7 +8,6 @@
 .menu__wrapper {
   display: flex;
   @include container;
-  padding: 0 3.125%; /* 10px / 320px */
   flex-wrap: wrap;
   align-items: center;
 }
