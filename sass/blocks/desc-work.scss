@@ -1,6 +1,6 @@
 .desc-work {
   @include container;
-  padding-top: 35px;
+  padding-top: 31px;
   @include font-style(16px, 29px, 400, inherit);
 }
 
@@ -10,7 +10,7 @@
 }
 
 .desc-work__foto {
-  margin: 35px 0;
+  margin: 33px 0 23px;
 }
 
 @media ($mobile-widths-fluid) {
@@ -27,7 +27,16 @@
 @media ($tablet-widths) {
   .desc-work {
     @include container;
-    padding-top: 45px;
+    padding-top: 42px;
+  }
+
+  .desc-work__foto {
+    margin: 34px 0 30px;
+  }
+
+  .desc-work__stack b {
+    display: block;
+    width: 100%;
   }
 }
 

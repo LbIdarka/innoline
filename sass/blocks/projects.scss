@@ -12,12 +12,16 @@
   list-style: none;
 }
 
+.projects__item:not(:first-child) {
+  margin-top: 39px;
+}
+
 .projects__item:nth-last-child(-n+8) {
   display: none;
 }
 
 .projects__foto {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .projects__foto img {
@@ -25,7 +29,7 @@
 }
 
 .projects__desc {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .projects__desc a {
@@ -45,17 +49,20 @@
 .projects__item-caption {
   margin: 0;
   @include font-style(20px, 31px, 700, inherit);
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .projects__text {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 15px;
+  padding-right: 20px;
   @include font-style(16px, 27px, 400, inherit);
 }
 
 .projects__time {
-  margin-top: 20px;
+  margin: 0;
+  margin-top: 15px;
   @include font-style(16px, 27px, 400, inherit);
 }
 

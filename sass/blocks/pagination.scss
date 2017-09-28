@@ -1,9 +1,10 @@
 
 .pagination {
-  margin-top: 40px;
+  margin-top: 31px;
 
   &--margin {
     margin-bottom: 55px;
+    margin-top: 42px;
   }
 }
 
@@ -16,7 +17,7 @@
 }
 
 .pagination__item {
-  margin-right: auto;
+  margin-right: 45px;
 
   &--prev,
   &--next {
@@ -31,6 +32,13 @@
 
   &--active {
     color: $color-text;
+  }
+}
+
+@media ($tablet-widths) {
+  .pagination--margin {
+    margin-bottom: 94px;
+    margin-top: 58px;
   }
 }
 

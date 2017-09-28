@@ -4,6 +4,10 @@
   padding: 35px 0 12px;
   color: #ffffff;
   background-color: $bg-blue;
+
+  &--portfolio-margin {
+    margin-top: 59px;
+  }
 }
 
 .contacts__wrapper {
@@ -67,7 +71,7 @@
 @media ($tablet-widths) {
   .contacts {
     margin-top: 50px;
-    padding: 35px 0;
+    padding: 37px 0;
   }
 
   .contacts__wrapper {
@@ -86,7 +90,11 @@
   }
 
   .contacts__link {
-    padding-left: 50px;
+    padding-left: 29px;
+
+    &--icon-tel {
+      background-position-x: 0;
+    }
   }
 }
 
