@@ -70,8 +70,12 @@
 
 @media ($tablet-widths) {
   .contacts {
-    margin-top: 50px;
+    margin-top: 65px;
     padding: 37px 0;
+
+    &--portfolio {
+      margin-top: 50px;
+    }
   }
 
   .contacts__wrapper {
@@ -90,10 +94,20 @@
   }
 
   .contacts__link {
-    padding-left: 29px;
+    padding: 2px 0 9px 29px;
 
     &--icon-tel {
       background-position-x: 0;
+    }
+
+    &--icon-skype {
+      width: 172px;
+      padding-left: 50px;
+    }
+
+    &--icon-mail {
+      width: 243px;
+      padding-left: 55px;
     }
   }
 }

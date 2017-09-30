@@ -36,6 +36,11 @@
 }
 
 @media ($tablet-widths) {
+
+  .pagination {
+    margin-top: 39px;
+  }
+
   .pagination--margin {
     margin-bottom: 94px;
     margin-top: 58px;

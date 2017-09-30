@@ -30,5 +30,7 @@
 }
 
 @media ($tablet-widths) {
-  font-size: 35px;
+  .title {
+    font-size: 35px;
+  }
 }

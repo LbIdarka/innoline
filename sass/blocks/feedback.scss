@@ -102,11 +102,12 @@
 @media ($tablet-widths) {
   .feedback {
     @include container;
+    padding: 45px 0 80px;
   }
 
   .feedback__form {
     display: flex;
-    margin-top: 45px;
+    margin-top: 42px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -116,7 +117,7 @@
   }
 
   .feedback__btn {
-    margin-top: 16px;
+    margin: 19px auto 0;
   }
 }
 
