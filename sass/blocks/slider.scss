@@ -51,6 +51,12 @@ input[type="radio"] {
   color: $color-text;
 }
 
+@media ($mobile-widths-fluid) {
+  .slider__item {
+    text-align: center;
+  }
+}
+
 @media ($tablet-widths) {
   .slider {
     @include container;
@@ -74,7 +80,7 @@ input[type="radio"] {
 
   .slider__item {
     width: 350px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
     &:nth-child(odd) {
       margin-right: auto;
@@ -89,7 +95,6 @@ input[type="radio"] {
   .slider__controls {
     display: flex;
     width: 100%;
-    margin-top: 30px;
     justify-content: space-between;
   }
 
@@ -146,7 +151,7 @@ input[type="radio"] {
     width: 100%;
     max-width: none;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 28px;
   }
 
   .slider__slide {
@@ -157,6 +162,7 @@ input[type="radio"] {
   .slider__item {
     width: 370px;
     margin-bottom: 0;
+    text-align: left;
 
     &:nth-child(odd) {
       margin-right: 0;

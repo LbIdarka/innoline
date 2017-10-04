@@ -12,12 +12,18 @@
   .page-current {
     background-image: url("../img/bg-tablet.jpg");
   }
+}
 
+@media ($tablet-widths-fluid) {
+  .page-current {
+    background-size: cover;
+  }
 }
 
 @media ($desktop-widths) {
   .page-current {
     background-image: url("../img/bg-desc.jpg");
+    background-size: contain;
 
     &--nojs {
       background-position-y: 0;

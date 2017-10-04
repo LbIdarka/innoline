@@ -52,6 +52,7 @@
     height: 5px;
     background: none;
     border: none;
+    cursor: pointer;
 
     &::before {
     content: "";
@@ -92,10 +93,10 @@
 
   .main-nav--opened .main-nav__list {
     position: absolute;
-    top: 42px;
+    top: 40px;
     left: 0;
     display: block;
-    width: 300px;
+    width: 320px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -186,7 +187,7 @@
 @media ($desktop-widths) {
   .main-nav {
     width: 616px;
-    margin-left: 160px;
+    margin-left: 150px;
   }
 
   .main-nav__toggle {

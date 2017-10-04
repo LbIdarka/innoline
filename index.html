@@ -10,19 +10,18 @@
   HTML {
     background: url('img/mobile.jpg' ) 50% 0 no-repeat;
   }
-/*
-  @media (min-width: 800px) {
+
+  @media (min-width: 768px) {
     HTML {
-      background-image: url('img/page-tablet.jpg' );
+      background-image: url('img/Tablet.jpg' );
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1920px) {
     HTML {
-      background-image: url('img/page-desktop.jpg' );
+      background-image: url('img/innoline.jpg' );
     }
   }
-*/
   }
 </style>
     <title>Innoline</title>
@@ -77,20 +76,20 @@
       <section class="slogan">
         <h2 class="slogan__title">Слоган</h2>
         <span class="slogan__caption">Разработка сложных сайтов  на ASP.NET</span>
-        <a href="#" class="slogan__btn  btn">в портфолио</a>
+        <a href="portfolio.html" class="slogan__btn  btn">в портфолио</a>
       </section>
 
       <section class="about">
         <header class="about__header">
           <h2 class="about__title  title">О компании</h2>
-          <p class="about__text">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
+          <p class="about__text">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем<br> гибкую ASP.NET CMS Orchard.</p>
         </header>
         <div class="about__inner">
           <ul class="about__list">
-            <li class="about__item">Консультирование</li>
-            <li class="about__item">Менеджмент проектов</li>
-            <li class="about__item">Гарантия качества</li>
-            <li class="about__item">Выполнение сроков</li>
+            <li class="about__item  about__item--icon-tel">Консультирование</li>
+            <li class="about__item  about__item--icon-qw">Менеджмент проектов</li>
+            <li class="about__item  about__item--icon-dots">Гарантия качества</li>
+            <li class="about__item  about__item--icon-clock">Выполнение сроков</li>
           </ul>
         </div>
       </section>
@@ -223,30 +222,30 @@
             </div>
 
             <div class="slider__active"> <!-- навигация по слайдам на мобильной версии: отдельные картинки -->
-                <label class="slider__active-num" for="slide-1">01.</label>
-                <label class="slider__active-num" for="slide-2">02.</label>
-                <label class="slider__active-num" for="slide-3">03.</label>
-                <label class="slider__active-num" for="slide-4">04.</label>
+                <label class="slider__active-num" for="slide-1" tabindex="0">01.</label>
+                <label class="slider__active-num" for="slide-2" tabindex="0">02.</label>
+                <label class="slider__active-num" for="slide-3" tabindex="0">03.</label>
+                <label class="slider__active-num" for="slide-4" tabindex="0">04.</label>
             </div>
           </div>
           <div class="slider__controls"> <!-- скрываем в моб.версии, навигация по большим слайдам, состоящим из нескольких картинок -->
             <div class="slider__prev">
-                <label for="btn-4">пред</label>
-                <label for="btn-1">пред</label>
-                <label for="btn-2">пред</label>
-                <label for="btn-3">пред</label>
+                <label for="btn-4" tabindex="0">пред</label>
+                <label for="btn-1" tabindex="0">пред</label>
+                <label for="btn-2" tabindex="0">пред</label>
+                <label for="btn-3" tabindex="0">пред</label>
             </div>
             <div class="slider__active  slider__active--controls">
-              <label class="slider__active-num" for="btn-1">01.</label>
-              <label class="slider__active-num" for="btn-2">02.</label>
-              <label class="slider__active-num" for="btn-3">03.</label>
-              <label class="slider__active-num" for="btn-4">04.</label>
+              <label class="slider__active-num" for="btn-1" tabindex="0">01.</label>
+              <label class="slider__active-num" for="btn-2" tabindex="0">02.</label>
+              <label class="slider__active-num" for="btn-3" tabindex="0">03.</label>
+              <label class="slider__active-num" for="btn-4" tabindex="0">04.</label>
             </div>
             <div class="slider__next">
-              <label for="btn-2">след</label>
-              <label for="btn-3">след</label>
-              <label for="btn-4">след</label>
-              <label for="btn-1">след</label>
+              <label for="btn-2" tabindex="0">след</label>
+              <label for="btn-3" tabindex="0">след</label>
+              <label for="btn-4" tabindex="0">след</label>
+              <label for="btn-1" tabindex="0">след</label>
             </div>
           </div>
         </section>
@@ -254,51 +253,53 @@
       </section>
 
       <section class="news">
-        <h2 class="news__title  title">Последние новости</h2>
-        <p class="news__subtitle">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
-        <article class="news__item">
-          <div class="news__item-img">
-            <picture>
-              <source media="(min-width: 1180px)" srcset="img/news-desc.jpg">
-              <source media="(min-width: 728px)" srcset="img/news-tablet.jpg">
-              <img src="img/news-mobile.jpg" alt="космическая станция">
-            </picture>
-          </div>
-          <div class="news__item-desc">
-            <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
-            <time class="news__item-time" datetime="2015-03-25">25.03.2015</time>
-            <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
-          </div>
-        </article>
-        <article class="news__item">
-          <div class="news__item-img  news__item-img--order">
-            <picture>
-              <source media="(min-width: 1180px)" srcset="img/news-desc.jpg">
-              <source media="(min-width: 728px)" srcset="img/news-tablet.jpg">
-              <img src="img/news-mobile.jpg" alt="космическая станция">
-            </picture>
-          </div>
-          <div class="news__item-desc">
-            <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
-            <time class="news__item-time" datetime="2015-03-25">25.03.2015</time>
-            <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
-          </div>
-        </article>
-        <article class="news__item">
-          <div class="news__item-img  news__item-img--order">
-            <img class="news__item-img" src="img/news2-desc.jpg" width="560" height="329" alt="Байкал">
-          </div>
-          <div class="news__item-desc">
-            <h3 class="news__item-caption">Заповедные территории России</h3>
-            <time class="news__item-time" datetime="2015-03-25">25.03.2015</time>
-            <p class="news__item-text">Байкал - самое глубокое озеро на планете, крупнейший природный резервуар пресной воды. В Байкале обитает 2600 видов и подвидов водных животных, более половины которых являются эндемиками, то есть обитают только в этом водоеме.</p>
-          </div>
-        </article>
+        <div class="news__wrapper">
+          <h2 class="news__title  title">Последние новости</h2>
+          <p class="news__subtitle">Разработка и поддержка сайтов на ASP.NET. В зависимости от функциональных особенностей требуемой системы пишем CMS с нуля или используем гибкую ASP.NET CMS Orchard.</p>
+          <article class="news__item">
+            <div class="news__item-img">
+              <picture>
+                <source media="(min-width: 1180px)" srcset="img/news-desc.jpg">
+                <source media="(min-width: 728px)" srcset="img/news-tablet.jpg">
+                <img src="img/news-mobile.jpg" alt="космическая станция">
+              </picture>
+            </div>
+            <div class="news__item-desc">
+              <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
+              <time class="news__item-time" datetime="2015-03-25">25.03.2015</time>
+              <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
+            </div>
+          </article>
+          <article class="news__item">
+            <div class="news__item-img  news__item-img--order">
+              <picture>
+                <source media="(min-width: 1180px)" srcset="img/news-desc.jpg">
+                <source media="(min-width: 728px)" srcset="img/news-tablet.jpg">
+                <img src="img/news-mobile.jpg" alt="космическая станция">
+              </picture>
+            </div>
+            <div class="news__item-desc">
+              <h3 class="news__item-caption">Спилберг, Нагиев и Шевчук поздравили экипаж МКС, вернувшийся 2 марта</h3>
+              <time class="news__item-time" datetime="2015-03-25">25.03.2015</time>
+              <p class="news__item-text">Космонавт Михаил Корниенко, американец Скотт Келли (НАСА), а также Сергей Волков вернулись на Землю с МКС. Космонавты не успели ответить на все поздравления сразу, но заочно благодарят поздравивших их звезд.</p>
+            </div>
+          </article>
+          <article class="news__item">
+            <div class="news__item-img  news__item-img--order">
+              <img class="news__item-img" src="img/news2-desc.jpg" width="560" height="329" alt="Байкал">
+            </div>
+            <div class="news__item-desc">
+              <h3 class="news__item-caption">Заповедные территории России</h3>
+              <time class="news__item-time" datetime="2015-03-25">25.03.2015</time>
+              <p class="news__item-text">Байкал - самое глубокое озеро на планете, крупнейший природный резервуар пресной воды. В Байкале обитает 2600 видов и подвидов водных животных, более половины которых являются эндемиками, то есть обитают только в этом водоеме.</p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer>
-      <section class="contacts">
+      <section class="contacts  contacts--index">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Наши контакты</h2>
           <ul class="contacts__list">
@@ -347,7 +348,11 @@
       </div>
     </footer>
 
+    <script>
+      var bgPosition = document.querySelector('.page-current');
 
+      bgPosition.classList.remove('page-current--nojs');
+    </script>
     <script src="../js/script.js"></script>
   </body>
 </html>

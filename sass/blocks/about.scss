@@ -12,6 +12,10 @@
   padding: 50px 15px 213px;
   @include font-style(16px, 26px, 400, inherit);
   text-align: center;
+
+  & br {
+    display: none;
+  }
 }
 
 .about__inner {
@@ -36,6 +40,7 @@
   padding-top: 100px;
   padding-left: 10px;
   @include font-style(10px, 15px, 700, #ffffff);
+  text-align: center;
   text-transform: uppercase;
 
   &:nth-child(even) {
@@ -54,24 +59,30 @@
     background: url(../img/phone.svg) no-repeat center;
   }
 
-  &:nth-child(2)::before {
-    left: 39px;
+  &--icon-qw::before {
     background-image: url(../img/qw.svg);
   }
 
-  &:nth-child(3)::before {
+  &--icon-dots::before {
     background-image: url(../img/dots.svg);
   }
 
   &:last-child::before {
-    left: 39px;
     background-image: url(../img/clock.svg);
   }
 }
 
 @media ($mobile-widths-fluid) {
+  .about {
+    background: #ffffff;
+  }
+
   .about__header {
     @include container-fluid;
+  }
+
+  .about__text {
+    padding-bottom: 58%;
   }
 
   .about__inner {
@@ -82,19 +93,32 @@
     @include container-fluid;
   }
 
-  .about__item::before {
-    left: 36%;
+  .about__item {
+    text-align: center;
+
+    &::before {
+      left: 36%;
+    }
   }
 }
 
 @media ($tablet-widths) {
+  .about {
+    margin-top: 316px;
+    background: inherit;
+  }
+
   .about__header {
     @include container;
-    background: url(../img/iPad-tablet.png) no-repeat center 212px;
+    background: url(../img/iPad-tablet.png) no-repeat center 239px;
   }
 
   .about__text {
-    padding: 40px 30px 430px;
+    padding: 69px 30px 439px;
+
+    & br {
+      display: block;
+    }
   }
 
   .about__inner {
@@ -110,10 +134,15 @@
   .about__item {
     width: 25%;
     margin-bottom: 0;
-    padding-top: 100px;
+    padding-top: 110px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
 
     &::before {
-      left: 50px;
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 40px;
     }
   }
 }
@@ -137,13 +166,17 @@
 }
 
 @media ($desktop-widths) {
+  .about {
+    margin-top: 0;
+  }
+
   .about__header {
     @include container;
-    background: url(../img/iPhone-desc.png) no-repeat center 214px;
+    background: url(../img/iPhone-desc.png) no-repeat center 250px;
   }
 
   .about__text {
-    padding: 65px 180px 430px;
+    padding: 100px 180px 410px;
   }
 
   .about__inner {
@@ -160,10 +193,12 @@
   .about__item {
     width: 180px;
     margin-right: 55px;
-    padding-top: 115px;
+    padding-top: 121px;
 
     &::before {
-      left: 50px;
+      width: 90px;
+      height: 90px;
+      left: 45px;
     }
   }
 }

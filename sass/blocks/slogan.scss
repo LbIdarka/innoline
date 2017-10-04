@@ -19,7 +19,6 @@
 
 @media ($mobile-widths-fluid) {
   .slogan {
-    height: calc(100vh - 53px);
     @include container-fluid;
     padding-top: 50%;
   }
@@ -29,15 +28,15 @@
 @media ($tablet-widths) {
   .slogan {
     @include container;
-    padding: 0 2.6%; /* 20px / 768px */
-    padding-top: 290px;
+    padding: 302px 135px 0 142px;
+    letter-spacing: 0.1em;
   }
 
   .slogan__caption {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     font-size: 17px;
+    text-align: left;
   }
-
 }
 
 @media ($tablet-widths-fluid) {
@@ -45,19 +44,23 @@
     @include container-fluid;
     padding-top: 50%;
   }
+
+  .slogan__caption {
+    text-align: center;
+  }
 }
 
 
 @media ($desktop-widths) {
   .slogan {
-    height: calc(100vh - 109px);
+    height: 100vh;
     @include container;
     padding: 0 3.9%; /* 50px / 1280px */
-    padding-top: 200px;
+    padding-top: 222px;
   }
 
   .slogan__caption {
-    margin-bottom: 40px;
+    margin-bottom: 47px;
     line-height: 32px;
   }
 }

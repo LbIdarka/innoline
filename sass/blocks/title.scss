@@ -32,5 +32,10 @@
 @media ($tablet-widths) {
   .title {
     font-size: 35px;
+
+    &::before {
+      bottom: -31px;
+      left: calc(50% - 46px);
+    }
   }
 }

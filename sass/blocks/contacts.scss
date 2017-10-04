@@ -76,6 +76,10 @@
     &--portfolio {
       margin-top: 50px;
     }
+
+    &--index {
+      margin-top: 47px;
+    }
   }
 
   .contacts__wrapper {
@@ -128,9 +132,9 @@
 
 @media ($desktop-widths) {
   .contacts {
-    margin-top: 150px;
+    margin-top: 158px;
 
-    &--portfolio {
+    &--portfolio-margin {
       margin-top: 80px;
     }
   }

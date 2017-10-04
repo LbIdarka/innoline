@@ -16,7 +16,8 @@
   margin-top: 39px;
 }
 
-.projects__item:nth-last-child(-n+8) {
+.projects__item--tablet,
+.projects__item--desktop {
   display: none;
 }
 
@@ -107,7 +108,7 @@
     margin-top: 0;
   }
 
-  .projects__item:nth-child(n+8):nth-child(-n+12) {
+  .projects__item--tablet {
     display: block;
   }
 
@@ -167,6 +168,10 @@
     @include container;
   }
 
+  .projects__title {
+    margin-top: 63px;
+  }
+
   .projects__item {
     width: 365px;
 
@@ -174,12 +179,12 @@
       margin-right: auto;
     }
 
-    &:nth-child(n+4) {
+    &--tablet {
       display: none;
     }
   }
 
-  .projects__item:nth-last-child(-n+4) {
+  .projects__item--desktop {
     display: block;
   }
 }

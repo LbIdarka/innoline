@@ -1,7 +1,10 @@
 .news {
-  @include container;
   padding-top: 47px;
   background: #ffffff;
+}
+
+.news__wrapper {
+  @include container;
 }
 
 .news__title {
@@ -66,16 +69,19 @@
 }
 
 @media ($mobile-widths-fluid) {
-  .news {
+  .news__wrapper {
     @include container-fluid;
   }
 }
 
 @media ($tablet-widths) {
   .news {
+    padding-top: 90px;
+  }
+
+  .news__wrapper {
     display: flex;
     @include container;
-    padding-top: 90px;
     flex-wrap: wrap;
   }
 
@@ -85,12 +91,15 @@
 
   .news__subtitle {
     width: 100%;
+    margin-top: 73px;
+    margin-bottom: 7px;
     padding: 0 30px;
   }
 
   .news__item {
     display: flex;
     width: 100%;
+    margin-top: 40px;
     justify-content: space-between;
   }
 
@@ -107,12 +116,21 @@
   }
 
   .news__item-caption {
+    font-size: 18px;
     margin-top: 0;
+  }
+
+  .news__item-time {
+    margin-top: 11px;
+  }
+
+  .news__item-text {
+    line-height: 25px;
   }
 }
 
 @media ($tablet-widths-fluid) {
-  .news {
+  .news__wrapper {
     @include container-fluid;
   }
 
@@ -132,8 +150,11 @@
 
 @media ($desktop-widths) {
   .news {
-    @include container;
     padding-top: 125px;
+  }
+
+  .news__wrapper {
+    @include container;
   }
 
   .news__subtitle {
@@ -161,5 +182,9 @@
   .news__item-desc {
     width: 550px;
     margin-top: 55px;
+  }
+
+  .news__item-time {
+    margin-top: 21px;
   }
 }
