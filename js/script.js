@@ -1,5 +1,4 @@
 //======= гамбургерное меню =======//
-
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
@@ -23,7 +22,7 @@ var scrolled = window.pageYOffset; //проверяем состояние ск�
 var logoRed = document.querySelector('.logo__img-color');
 var logo = document.querySelector('.logo__img');
 
-  if(scrolled) { //если скрол больше или равен отступу меню + слоган, то добавляем класс с position: fixed;
+  if(scrolled) {
     stickyMenu.classList.add("menu--fixed");
     logo.classList.add('logo__img--grey');
     logoRed.classList.add('logo__img-color--menu-fixed');

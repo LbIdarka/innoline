@@ -23,9 +23,19 @@
   padding: 0;
   padding-left: 10px;
   border: 1px solid #9d9d9d;
+  outline: none;
 
   &--tel {
   margin-bottom: 18px;
+  }
+
+  &:hover,
+  &:active {
+    border-color: #000000;
+  }
+
+  &:focus {
+    border-color: $bg-blue;
   }
 }
 

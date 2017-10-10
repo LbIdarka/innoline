@@ -4,26 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <style>
-  HTML {
-    background: url('img/mobile.jpg' ) 50% 0 no-repeat;
-  }
-
-  @media (min-width: 768px) {
-    HTML {
-      background-image: url('img/Tablet.jpg' );
-    }
-  }
-
-  @media (min-width: 1920px) {
-    HTML {
-      background-image: url('img/innoline.jpg' );
-    }
-  }
-  }
-</style>
     <title>Innoline</title>
   </head>
   <body class="page-current  page-current--nojs">
@@ -348,7 +328,7 @@
       </div>
     </footer>
 
-    <script>
+    <script> // сдвигаем вниз фон для размещения меню, если отключен js
       var bgPosition = document.querySelector('.page-current');
 
       bgPosition.classList.remove('page-current--nojs');

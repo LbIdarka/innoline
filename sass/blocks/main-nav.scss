@@ -181,6 +181,19 @@
     border-top: 1px solid #d8ebf7;
     border-bottom: 1px solid #f7fcfd;
   }
+
+  .main-nav--nojs .main-nav__item a[href] {
+    &:hover,
+    &:focus {
+      color: $color-mark;
+      background: #c7e5ff;
+    }
+
+    &:active {
+      opacity: 0.5;
+      background: inherit;
+    }
+  }
 }
 
 

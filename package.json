@@ -7,16 +7,21 @@
     "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.5.3",
     "browser-sync": "2.18.2",
+    "del": "^3.0.0",
     "gulp": "3.9.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "2.3.2",
-    "pixel-glass": "^1.0.13"
+    "pixel-glass": "^1.0.13",
+    "run-sequence": "^2.2.0"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "editorconfig-cli": [
     "*.html",
