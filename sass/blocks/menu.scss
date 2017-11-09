@@ -39,7 +39,9 @@
 @media ($desktop-widths) {
 
   .menu {
-    padding: 30px 0 15px;
+    position: fixed;
+    top: 0;
+    padding: 18px;
     background-color: transparent;
 
     &--border-no {
@@ -56,9 +58,7 @@
 @media ($desktop-widths-only) {
   .menu--fixed {
     position: fixed;
-    top: 0;
-    padding: 18px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid rgba(51, 61, 72, 0.2);
     z-index: 2;
   }

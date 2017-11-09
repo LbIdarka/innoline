@@ -22,7 +22,7 @@ var scrolled = window.pageYOffset; //проверяем состояние ск�
 var logoRed = document.querySelector('.logo__img-color');
 var logo = document.querySelector('.logo__img');
 
-  if(scrolled) {
+  if(scrolled >= 50) {
     stickyMenu.classList.add("menu--fixed");
     logo.classList.add('logo__img--grey');
     logoRed.classList.add('logo__img-color--menu-fixed');
