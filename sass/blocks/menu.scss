@@ -43,6 +43,7 @@
     top: 0;
     padding: 18px;
     background-color: transparent;
+    transition: background 0.5s linear;
 
     &--border-no {
       border-bottom: none;
