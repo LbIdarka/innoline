@@ -16,6 +16,10 @@
   list-style: none;
 }
 
+.main-nav__item {
+  position: relative;
+}
+
 
 @media ($menu-widths) {
   .main-nav--closed .main-nav__toggle {
@@ -121,6 +125,15 @@
     border-bottom: 1px solid #f7fcfd;
   }
 
+  .main-nav--opened .submenu__item a {
+    display: block;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    color: inherit;
+    border: none;
+  }
+
   .main-nav--opened .main-nav__item a[href] {
     &:hover,
     &:focus {
@@ -131,6 +144,14 @@
     &:active {
       opacity: 0.5;
       background: inherit;
+    }
+  }
+
+  .main-nav--opened .submenu__item a[href] {
+    &:hover,
+    &:focus {
+      color: $color-mark;
+      background: none;
     }
   }
 
