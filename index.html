@@ -23,9 +23,13 @@
             <li class="main-nav__item">
               <a href="portfolio.html" class="main-nav__link">Портфолио</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Услуги</a>
-              <ul class="main-nav-item__submenu  submenu">
+            <li class="main-nav__item  main-nav__item--dropdown">
+              <a href="#" class="main-nav__link">Услуги
+                <button class="main-nav-item__btn  main-nav-item__btn--down"> <!-- скрываем на десктопе-->
+                  <span>Открыть подменю</span>
+                </button>
+              </a>
+              <ul class="main-nav-item__submenu  submenu  submenu--closed" id="service">
                 <li class="submenu__item">
                   <a href="#" class="submenu__link">Разработка на ASP.NET</a>
                 </li>
@@ -37,10 +41,13 @@
                 </li>
               </ul>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">О нас</a>
-              <!-- <button class="main-nav-item__btn"><span>Открыть подменю</span></button> скрываем на десктопе -->
-              <ul class="main-nav-item__submenu  submenu">
+            <li class="main-nav__item  main-nav__item--dropdown  main-nav__item--small">
+              <a href="#" class="main-nav__link">О нас
+                <button class="main-nav-item__btn  main-nav-item__btn--down"> <!-- скрываем на десктопе-->
+                  <span>Закрыть подменю</span>
+                </button>
+              </a>
+              <ul class="main-nav-item__submenu  submenu  submenu--closed" id="about">
                 <li class="submenu__item">
                   <a href="#" class="submenu__link">О компании</a>
                 </li>
@@ -50,7 +57,7 @@
               </ul>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Контакты</a>
+              <a href="#" class="main-nav__link  main-nav__link--no-border">Контакты</a>
             </li>
           </ul>
         </nav>

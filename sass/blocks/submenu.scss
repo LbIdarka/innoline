@@ -1,8 +1,58 @@
 .submenu {
   display: block;
   margin: 0;
-  padding: 12px 21px;
+  padding: 7px 21px;
   list-style: none;
   border-top: 1px solid #d8ebf7;
   border-bottom: 1px solid #f7fcfd;
+}
+
+.submenu--closed {
+  display: none;
+}
+
+.submenu--opened {
+  display: block;
+}
+
+ .submenu__link {
+  display: block;
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: 300;
+  color: inherit;
+  text-decoration: none;
+  border: none;
+}
+
+.main-nav--nojs .submenu {
+  display: block;
+}
+
+@media ($desktop-widths) {
+  .submenu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 3;
+  }
+
+  .submenu__link {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $color-mark;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
 }

@@ -57,6 +57,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    outline: none;
 
     &::before {
     content: "";
@@ -115,7 +116,7 @@
     font-weight: 700;
   }
 
-  .main-nav--opened .main-nav__item a {
+  .main-nav__link {
     display: block;
     padding: 12px 21px 13px;
     @include font-style(14px, 2, 700, inherit);
@@ -125,16 +126,7 @@
     border-bottom: 1px solid #f7fcfd;
   }
 
-  .main-nav--opened .submenu__item a {
-    display: block;
-    padding: 5px;
-    font-size: 12px;
-    font-weight: 300;
-    color: inherit;
-    border: none;
-  }
-
-  .main-nav--opened .main-nav__item a[href] {
+  .main-nav__item a[href] {
     &:hover,
     &:focus {
       color: $color-mark;
@@ -144,14 +136,6 @@
     &:active {
       opacity: 0.5;
       background: inherit;
-    }
-  }
-
-  .main-nav--opened .submenu__item a[href] {
-    &:hover,
-    &:focus {
-      color: $color-mark;
-      background: none;
     }
   }
 
@@ -179,6 +163,7 @@
 
   .main-nav--nojs {
     width: 100%;
+    padding-top: 12px;
     order: 3;
   }
 
@@ -193,28 +178,38 @@
     order: 3;
   }
 
-  .main-nav--nojs .main-nav__item a {
+  .main-nav--nojs .main-nav__link {
     display: block;
-    padding: 12px 21px 13px;
-    @include font-style(14px, 32px, 700, inherit);
-    text-transform: uppercase;
-    text-decoration: none;
-    border-top: 1px solid #d8ebf7;
-    border-bottom: 1px solid #f7fcfd;
+    padding: 5px 21px;
   }
 
-  .main-nav--nojs .main-nav__item a[href] {
-    &:hover,
-    &:focus {
-      color: $color-mark;
-      background: #c7e5ff;
+  .main-nav__link--no-border {
+      border-bottom: none;
     }
 
-    &:active {
-      opacity: 0.5;
-      background: inherit;
+    .main-nav-item__btn {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      padding-top: 7px;
+      background: none;
+      border: none;
+      outline: none;
+      background-image: url("../img/arrows-pointing-down.svg");
+      background-repeat: no-repeat;
+      background-position: 0;
+
+      & span {
+        @include visually-hidden;
+      }
     }
-  }
+
+    .main-nav-item__btn--opened  {
+      background-image: url("../img/small-up-arrows-in-a-circle.svg");
+    }
 }
 
 
@@ -239,6 +234,21 @@
 
   .main-nav__item {
     margin-right: auto;
+  }
+
+  .main-nav__item:hover .submenu {
+    display: block;
+    width: 250px;
+    margin: 0;
+    padding: 15px 25px;
+    box-shadow: 0px 0px 6px 0px darkgrey;
+    border: none;
+    border-radius: 2px;
+    transition: all 1s ease-in;
+  }
+
+  .main-nav__item--small:hover .submenu {
+    width: 200px;
   }
 
   .main-nav__link {
@@ -266,5 +276,8 @@
     &:active {
       opacity: 0.5;
     }
+  }
+  .main-nav-item__btn {
+    display: none;
   }
 }

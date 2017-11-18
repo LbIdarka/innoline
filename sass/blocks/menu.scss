@@ -42,8 +42,8 @@
     position: fixed;
     top: 0;
     padding: 18px;
-    background-color: transparent;
-    transition: background 0.5s linear;
+    background: transparent;
+    transition: background 1s ease-in-out;
 
     &--border-no {
       border-bottom: none;
@@ -61,6 +61,6 @@
     position: fixed;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid rgba(51, 61, 72, 0.2);
-    z-index: 2;
+    z-index: 10;
   }
 }
