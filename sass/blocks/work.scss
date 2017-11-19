@@ -4,13 +4,12 @@
 
 .work__header {
   color: #ffffff;
-  background: $bg-blue;
+  background-image: linear-gradient(to top, #5fb4ea 0px, #5fb4ea 91px, #ffffff 91px, #ffffff 168px);;
 }
 
 .work__title {
   padding-bottom: 15px;
   color: $color-text;
-  background: #ffffff;
 }
 
 .work__inner {

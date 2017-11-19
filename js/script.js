@@ -3,6 +3,7 @@ var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var submenuParent = navMain.querySelector('.main-nav__item');
 var submenuToggle = navMain.querySelector('.main-nav-item__btn');
+var submenuToggleTop = navMain.querySelector('.main-nav-item__btn--opened');
 var submenu = document.querySelector('.submenu');
 
 navMain.classList.remove('main-nav--nojs');
@@ -17,43 +18,35 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+//======= выпадающее меню для мобильной версии =======//
+var dropdown = document.querySelectorAll('.main-nav__item--dropdown');
+var dropdownArray = Array.prototype.slice.call(dropdown,0);
+dropdownArray.forEach(function(el){
+  var button = el.querySelector('.main-nav__link'),
+      menu = el.querySelector('.submenu'),
+      arrow = el.querySelector('.main-nav-item__btn');
 
-// submenuToggle.addEventListener('click', function() {
-//   if (submenu.classList.contains('submenu--closed')) {
-//     submenu.classList.remove('submenu--closed');
-//     submenu.classList.add('submenu--opened');
-//   } else {
-//     submenu.classList.remove('submenu--opened');
-//     submenu.classList.add('submenu--closed');
-//   }
-// });
+  button.onclick = function(event) {
+    if(!menu.hasClass('submenu--opened')) {
+      menu.classList.add('submenu--opened');
+      menu.classList.remove('submenu--closed');
+      arrow.classList.remove('main-nav-item__btn--closed');
+      arrow.classList.add('main-nav-item__btn--opened');
+      event.preventDefault();
+    }
+    else {
+      menu.classList.remove('submenu--opened');
+      menu.classList.add('submenu--closed');
+      arrow.classList.remove('main-nav-item__btn--opened');
+      arrow.classList.add('main-nav-item__btn--closed');
+      event.preventDefault();
+    }
+  };
+})
 
-
-// var dropdown = document.querySelectorAll('.main-nav__item');
-// var dropdownArray = Array.prototype.slice.call(dropdown,0);
-// dropdownArray.forEach(function(el){
-// 	var button = el.querySelector('.dropdown__link'),
-// 			menu = el.querySelector('.submenu'),
-// 			arrow = button.querySelector('.main-nav-item__btn');
-
-// 	button.onclick = function(event) {
-// 		if(!menu.hasClass('submenu--opened')) {
-// 			menu.classList.add('submenu--opened');
-// 			menu.classList.remove('submenu--closed');
-// 			arrow.classList.add('main-nav-item__btn--opened');
-// 			arrow.classList.remove('main-nav-item__btn--down');
-// 			event.preventDefault();
-// 		}
-// 		else {
-// 			menu.classList.remove('submenu--opened');
-// 			menu.classList.add('submenu--closed');
-// 			arrow.classList.remove('main-nav-item__btn--opened');
-// 			arrow.classList.add('main-nav-item__btn--down');
-// 			event.preventDefault();
-// 		}
-// 	};
-// })
-
+Element.prototype.hasClass = function(className) {
+    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+};
 
 //======= функция для фиксированной навигации =======//
 

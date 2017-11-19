@@ -15,43 +15,70 @@
         <h2 class="menu__title">Навигация по сайту</h2>
 
         <nav class="main-nav main-nav--closed  main-nav--nojs">
-            <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="index.html" class="main-nav__link">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="portfolio.html" class="main-nav__link  main-nav__link--active">Портфолио</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Услуги</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">О нас</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+          <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="portfolio.html" class="main-nav__link">Портфолио</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--dropdown">
+              <a href="#" class="main-nav__link">Услуги
+                <button class="main-nav-item__btn  main-nav-item__btn--closed"> <!-- скрываем на десктопе-->
+                  <span>Открыть подменю</span>
+                </button>
+              </a>
+              <ul class="main-nav-item__submenu  submenu  submenu--closed">
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Разработка на ASP.NET</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Сопровождение сайтов на ASP.NET</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Что такое ASP.NET</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item  main-nav__item--dropdown  main-nav__item--small">
+              <a href="#" class="main-nav__link">О нас
+                <button class="main-nav-item__btn  main-nav-item__btn--closed"> <!-- скрываем на десктопе-->
+                  <span>Закрыть подменю</span>
+                </button>
+              </a>
+              <ul class="main-nav-item__submenu  submenu  submenu--closed">
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">О компании</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#" class="submenu__link">Вакансии</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link  main-nav__link--no-border">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-          <div class="logo">
-            <a href="index.html">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/logo.png">
-                <img class="logo__img"  src="img/Innoline(1).png" alt="логотип innolaine">
-              </picture>
-              <img class="logo__img-color " src="img/logo-blue.png" width="311" height="62" alt="innolaine">
-            </a>
-          </div>
+        <div class="logo">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo.png">
+              <img class="logo__img"  src="img/Innoline(1).png" alt="логотип innolaine">
+            </picture>
+            <img class="logo__img-color " src="img/logo-blue.png" width="311" height="62" alt="innolaine">
+          </a>
+        </div>
 
-          <section class="lang">
-            <h2 class="lang__title">Выбор языка сайта</h2>
-            <a href="#" class="lang__link">EN</a>
-            <a href="#" class="lang__link  lang__link--active">RU</a>
-          </section>
-          </div>
+        <section class="lang">
+          <h2 class="lang__title">Выбор языка сайта</h2>
+          <a href="#" class="lang__link">EN</a>
+          <a href="#" class="lang__link  lang__link--active">RU</a>
         </section>
+        </div>
+      </section>
     </header>
 
     <main>

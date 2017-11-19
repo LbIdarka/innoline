@@ -187,29 +187,37 @@
       border-bottom: none;
     }
 
-    .main-nav-item__btn {
-      position: absolute;
-      top: 0;
-      right: 10px;
-      display: block;
-      width: 50px;
-      height: 50px;
-      padding-top: 7px;
-      background: none;
-      border: none;
-      outline: none;
+  .main-nav-item__btn {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding-top: 7px;
+    background: none;
+    border: none;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 0;
+
+    & span {
+      @include visually-hidden;
+    }
+
+    &--closed {
       background-image: url("../img/arrows-pointing-down.svg");
-      background-repeat: no-repeat;
-      background-position: 0;
-
-      & span {
-        @include visually-hidden;
-      }
     }
 
-    .main-nav-item__btn--opened  {
-      background-image: url("../img/small-up-arrows-in-a-circle.svg");
+    &--opened  {
+      background-image: url("../img/up-arrows.svg");
+      transition: all 1s ease-in-out;
     }
+  }
+
+  .main-nav--nojs .main-nav-item__btn {
+    display: none;
+  }
 }
 
 

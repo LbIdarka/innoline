@@ -3,8 +3,13 @@
   margin: 0;
   padding: 7px 21px;
   list-style: none;
+  background: rgba(255, 255, 255, 0.9);
   border-top: 1px solid #d8ebf7;
   border-bottom: 1px solid #f7fcfd;
+
+  &--index {
+    background: rgba(234, 243, 248, 0.9);
+  }
 }
 
 .submenu--closed {
@@ -25,8 +30,28 @@
   border: none;
 }
 
+.submenu--opened .submenu__link {
+  animation: link 0.5s linear;
+}
+
+@keyframes link {
+
+    0% {
+      transform: scale(0.8);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+
+}
+
 .main-nav--nojs .submenu {
   display: block;
+}
+
+.main-nav--nojs .submenu__link {
+  padding: 5px 10px;
 }
 
 @media ($desktop-widths) {
@@ -38,6 +63,7 @@
   }
 
   .submenu__link {
+    padding: 10px 0;
     font-size: 14px;
     line-height: 1.2;
     font-weight: 700;
