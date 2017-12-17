@@ -51,6 +51,7 @@
 .feedback__form input,
 .feedback__form textarea {
   width: 100%;
+  font-size: 14px;
   padding: 0 10px 12px;
   border: none;
   outline: none;
@@ -66,19 +67,19 @@
 
 .feedback__form input::-webkit-input-placeholder,
 .feedback__form textarea::-webkit-input-placeholder {
-  @include font-style(14px, 22px, 400, $color-text);
+  color: $color-text;
 }
 
 .feedback__form input:-moz-placeholder,
 .feedback__form input::-moz-placeholder,
 .feedback__form textarea:-moz-placeholder,
 .feedback__form textarea::-moz-placeholder {
-  @include font-style(14px, 14px, 400, $color-text);
+  color: $color-text;
 }
 
 .feedback__form input:-ms-input-placeholder,
 .feedback__form textarea:-ms-input-placeholder {
-  @include font-style(14px, 22px, 400, $color-text);
+  color: $color-text;
 }
 
 .feedback__form-title--tel input::-webkit-input-placeholder {
