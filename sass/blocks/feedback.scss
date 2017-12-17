@@ -73,7 +73,7 @@
 .feedback__form input::-moz-placeholder,
 .feedback__form textarea:-moz-placeholder,
 .feedback__form textarea::-moz-placeholder {
-  @include font-style(14px, 22px, 400, $color-text);
+  @include font-style(14px, 14px, 400, $color-text);
 }
 
 .feedback__form input:-ms-input-placeholder,

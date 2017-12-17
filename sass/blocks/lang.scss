@@ -8,6 +8,10 @@
   @include visually-hidden;
 }
 
+select {
+  border: none;
+}
+
 .lang__link {
   display: block;
   @include font-style(15px, 2, 700, inherit);
@@ -16,6 +20,10 @@
   &:hover,
   &:focus {
     color: $color-mark;
+
+    option {
+      color: #000000;
+    }
   }
 
   &:active {

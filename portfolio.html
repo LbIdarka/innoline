@@ -18,7 +18,7 @@
           <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="portfolio.html" class="main-nav__link">Портфолио</a>
@@ -66,16 +66,20 @@
           <a href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo.png">
-              <img class="logo__img"  src="img/Innoline(1).png" alt="логотип innolaine">
+              <img class="logo__img"  src="img/logo-mobile.png" alt="логотип innolaine">
             </picture>
-            <img class="logo__img-color " src="img/logo.png" width="311" height="62" alt="innolaine">
+            <img class="logo__img-color" src="img/logo.png" width="311" height="62" alt="innolaine">
           </a>
         </div>
 
         <section class="lang">
           <h2 class="lang__title">Выбор языка сайта</h2>
-          <a href="#" class="lang__link">EN</a>
-          <a href="#" class="lang__link  lang__link--active">RU</a>
+          <select name="lang" class="lang__link">
+            <option value="EN" selected>EN</option>
+            <option value="RU">RU</option>
+          </select>
+          <!-- <a href="#" class="lang__link">EN</a>
+          <a href="#" class="lang__link  lang__link--active">RU</a> -->
         </section>
         </div>
       </section>
@@ -437,6 +441,6 @@
       </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
