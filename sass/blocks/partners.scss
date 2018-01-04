@@ -1,0 +1,21 @@
+.partners {
+  @include container;
+  margin-top: 40px;
+}
+
+.partners__title {
+  @include visually-hidden;
+}
+
+@media ($tablet-widths) {
+  .partners {
+  margin-top: 100px;
+  }
+}
+
+@media ($desktop-widths) {
+  .partners img {
+    display: block;
+    margin: auto;
+  }
+}
