@@ -1,0 +1,53 @@
+.common-content {
+  @include container;
+}
+
+.common-content__title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.common-content__text {
+  margin: 0;
+  margin-top: 15px;
+  padding-right: 20px;
+  @include font-style(16px, 27px, 400, inherit);
+}
+
+@media ($mobile-widths-fluid) {
+  .common-content {
+    @include container-fluid;
+  }
+
+  .common-content__title {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+}
+
+@media ($tablet-widths) {
+  .common-content {
+    @include container;
+  }
+}
+
+@media ($tablet-widths-fluid) {
+  .common-content {
+    @include container-fluid;
+  }
+}
+
+@media ($desktop-widths) {
+  .common-content {
+    @include container;
+  }
+
+  .common-content__title {
+    margin-top: 150px;
+    margin-bottom: 90px;
+  }
+
+  .common-content__text {
+    margin-top: 30px;
+  }
+}
