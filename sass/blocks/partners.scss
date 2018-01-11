@@ -3,13 +3,18 @@
   margin-top: 40px;
 }
 
-.partners__title {
-  @include visually-hidden;
+.partners__link {
+  display: block;
+  margin-top: 50px;
 }
 
 @media ($tablet-widths) {
   .partners {
   margin-top: 100px;
+  }
+
+  .partners__link {
+    margin-top: 70px;
   }
 }
 
@@ -17,5 +22,9 @@
   .partners img {
     display: block;
     margin: auto;
+  }
+
+  .partners__link {
+    margin-top: 90px;
   }
 }
